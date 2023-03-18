@@ -2,6 +2,19 @@
 
 This project aims to simulate emergency traffic on city roads using SUMO (Simulation of Urban Mobility).
 
+Features:
+
+- Completely random vehicle types and attributes, resulting in dynamic traffic flow
+- Real world image backgound (Dashikou, Zhenjiang, Jiangsu)
+- Vehicles will avoid emergency vehicle on sublane
+- Emergency vehicle is over speed and ignores red lights
+
+Problems:
+
+* The traffic lights are not intelligent, leading to congestion
+* Emergency vehicles cannot flexibly change lanes to overtake vehicles
+* Vehicles around the emergency vehicle cannot change lanes to avoid the emergency vehicle
+
 ![Screen Shot 2023-03-18 at 10.43.53](assets/Screen%20Shot%202023-03-18%20at%2010.43.53.jpg)
 
 
@@ -28,8 +41,28 @@ pip install traci  ## important! I didn't use the traditional
 git clone https://github.com/Gaochengzhi/Emergency_Traffic_Simulation.git --depth 1
 cd Emergency_Traffic_Simulation
 cd src
-python3 main.py
+python3 gui.py
 ```
+
+## Generating heatmap
+
+<img src="assets/Screen%20Shot%202023-03-18%20at%2021.15.36.jpg" alt="Screen Shot 2023-03-18 at 21.15.36" style="zoom:33%;" />
+
+
+
+```shell
+## under src folder
+sh run.sh
+```
+
+after all processer finishes enter `tools` folder, run
+
+```
+plot.py
+```
+
+
+
 
 ## Adjustment parameter
 
@@ -51,14 +84,14 @@ clib.xml                netback.jpg             output.trips2.xml
 ## if you are not sure the EDGE (not juction!) id
 ```
 
-* to change the traffic flow volume and vehicle types, edit the `autoGenTradic.sh`
+* to change the traffic flow volume and vehicle types, edit the vtype folder and `autoGenTradic.sh`
 
 ```shell
 python3 $SUMO_HOME/tools/randomTrips.py \
 -n net.xml \ 
 -p 0.06 \ ## volume, smaller number result in larger volume
 --fringe-factor 1 \ ## Whether the vehicle is generated only from the boundary of the road, larger(inf) is  
--L \
+-l \ ## The probability of generating a vehicle based on length
 --min-distance 1000 \
 --max-distance 500000 \
 --end 100 \ ## time to stop generating 
@@ -66,7 +99,11 @@ python3 $SUMO_HOME/tools/randomTrips.py \
 --prefix passenger \ ## same as above
 --seed 70 \
 --validate \
---vehicle-class passenger \
---trip-attributes="departSpeed=\"13.5\" maxSpeed=\"13.8\" departLane=\"best\" lcCooperative=\"1\" carFollowModel=\"EIDM\"" \
+--trip-attributes="type=\"motor\" departSpeed=\"max\"" 
+```
+Every time you change something, remember to execute the shell script
+
+```
+sh autoGenTradic.sh
 ```
 
