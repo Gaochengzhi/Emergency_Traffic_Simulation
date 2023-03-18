@@ -1,0 +1,568 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2023-03-18 10:15:51.625302 by randomTrips.py UNKNOWN
+<configuration>
+    <end value="19"/>
+    <lanes value="True"/>
+    <max-distance value="500000.0"/>
+    <min-distance value="1000.0"/>
+    <net-file value="net.xml"/>
+    <period value="0.09"/>
+    <route-file value="output.trips3.xml"/>
+    <seed value="30"/>
+    <trip-attributes value="departSpeed=&quot;13.5&quot; departLane=&quot;best&quot; lcCooperative=&quot;1&quot;"/>
+    <prefix value="motorcycle"/>
+    <validate value="True"/>
+    <vehicle-class value="motorcycle"/>
+</configuration>
+-->
+
+<!-- generated on 2023-03-18 10:15:51 by Eclipse SUMO duarouter Version 1.14.1
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/duarouterConfiguration.xsd">
+
+    <input>
+        <net-file value="net.xml"/>
+        <route-files value="trips.trips.xml"/>
+    </input>
+
+    <output>
+        <output-file value="output.trips3.xml"/>
+        <alternatives-output value="NUL"/>
+    </output>
+
+    <time>
+        <begin value="0"/>
+        <end value="19"/>
+    </time>
+
+    <report>
+        <no-warnings value="true"/>
+        <ignore-errors value="true"/>
+        <no-step-log value="true"/>
+    </report>
+
+</configuration>
+-->
+
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+    <vType id="motorcycle_motorcycle" vClass="motorcycle" lcCooperative="1"/>
+    <vehicle id="motorcycle0" type="motorcycle_motorcycle" depart="0.00" departLane="best" departSpeed="13.50">
+        <route edges="-E9 -E9.302 -E8 -E7 E1 E1.596 E2 -E32"/>
+    </vehicle>
+    <vehicle id="motorcycle1" type="motorcycle_motorcycle" depart="0.09" departLane="best" departSpeed="13.50">
+        <route edges="-E21 -E19 E37 -E29 -E28"/>
+    </vehicle>
+    <vehicle id="motorcycle2" type="motorcycle_motorcycle" depart="0.18" departLane="best" departSpeed="13.50">
+        <route edges="-E36 E35 -E27 -E26 -E25 E19 E20 E32 E2.669"/>
+    </vehicle>
+    <vehicle id="motorcycle3" type="motorcycle_motorcycle" depart="0.27" departLane="best" departSpeed="13.50">
+        <route edges="E9.823 -E41 -E28 -E27 -E26 E33 -E8 -E7 E1"/>
+    </vehicle>
+    <vehicle id="motorcycle4" type="motorcycle_motorcycle" depart="0.36" departLane="best" departSpeed="13.50">
+        <route edges="E1.596 E2 -E32 -E21 -E19 E37 E42"/>
+    </vehicle>
+    <vehicle id="motorcycle5" type="motorcycle_motorcycle" depart="0.45" departLane="best" departSpeed="13.50">
+        <route edges="E9 E9.823 -E41 E29 -E37 E19 E20"/>
+    </vehicle>
+    <vehicle id="motorcycle6" type="motorcycle_motorcycle" depart="0.54" departLane="best" departSpeed="13.50">
+        <route edges="-E1 -E1.703 E6 E18 E25 E33"/>
+    </vehicle>
+    <vehicle id="motorcycle8" type="motorcycle_motorcycle" depart="0.72" departLane="best" departSpeed="13.50">
+        <route edges="E0 E1 E1.596 E2 E2.669 -E12 E22"/>
+    </vehicle>
+    <vehicle id="motorcycle9" type="motorcycle_motorcycle" depart="0.81" departLane="best" departSpeed="13.50">
+        <route edges="E12 -E2 -E2.372 -E1 -E1.703 E6 E8 E40"/>
+    </vehicle>
+    <vehicle id="motorcycle10" type="motorcycle_motorcycle" depart="0.90" departLane="best" departSpeed="13.50">
+        <route edges="-E15 E8 E9 E9.823 E10"/>
+    </vehicle>
+    <vehicle id="motorcycle11" type="motorcycle_motorcycle" depart="0.99" departLane="best" departSpeed="13.50">
+        <route edges="-E12 -E11 -E10 -E41 -E28 -E27"/>
+    </vehicle>
+    <vehicle id="motorcycle12" type="motorcycle_motorcycle" depart="1.08" departLane="best" departSpeed="13.50">
+        <route edges="-E29 E41 E10 E11 E12 E3"/>
+    </vehicle>
+    <vehicle id="motorcycle13" type="motorcycle_motorcycle" depart="1.17" departLane="best" departSpeed="13.50">
+        <route edges="-E28 -E27 -E26 -E25 E37 E42 E11 E12"/>
+    </vehicle>
+    <vehicle id="motorcycle14" type="motorcycle_motorcycle" depart="1.26" departLane="best" departSpeed="13.50">
+        <route edges="-E8 E18 E37 E42 E38"/>
+    </vehicle>
+    <vehicle id="motorcycle15" type="motorcycle_motorcycle" depart="1.35" departLane="best" departSpeed="13.50">
+        <route edges="E6 E8 E9 E9.823 E10 E11 E12"/>
+    </vehicle>
+    <vehicle id="motorcycle16" type="motorcycle_motorcycle" depart="1.44" departLane="best" departSpeed="13.50">
+        <route edges="-E11 -E42 -E37 E19 E20 E32 -E2.372 -E1 -E1.703 E6"/>
+    </vehicle>
+    <vehicle id="motorcycle17" type="motorcycle_motorcycle" depart="1.53" departLane="best" departSpeed="13.50">
+        <route edges="-E24 -E23 -E22 -E11 -E10 -E41 -E28"/>
+    </vehicle>
+    <vehicle id="motorcycle18" type="motorcycle_motorcycle" depart="1.62" departLane="best" departSpeed="13.50">
+        <route edges="E19 E20 E32 E2.669 -E12 E22"/>
+    </vehicle>
+    <vehicle id="motorcycle19" type="motorcycle_motorcycle" depart="1.71" departLane="best" departSpeed="13.50">
+        <route edges="-E8 -E7"/>
+    </vehicle>
+    <vehicle id="motorcycle20" type="motorcycle_motorcycle" depart="1.80" departLane="best" departSpeed="13.50">
+        <route edges="E11 E12 -E2 -E2.372 -E1 -E1.703 E6 E18 E25 E33 -E8 -E7"/>
+    </vehicle>
+    <vehicle id="motorcycle21" type="motorcycle_motorcycle" depart="1.89" departLane="best" departSpeed="13.50">
+        <route edges="E26 E27 E28 E29 -E37 E19 E20 E32 E2.669"/>
+    </vehicle>
+    <vehicle id="motorcycle22" type="motorcycle_motorcycle" depart="1.98" departLane="best" departSpeed="13.50">
+        <route edges="E8 E9 E9.823 E10 E11 E12"/>
+    </vehicle>
+    <vehicle id="motorcycle23" type="motorcycle_motorcycle" depart="2.07" departLane="best" departSpeed="13.50">
+        <route edges="-E16 -E15 E8 -E33 E26 E27 E28 E29 -E37"/>
+    </vehicle>
+    <vehicle id="motorcycle24" type="motorcycle_motorcycle" depart="2.16" departLane="best" departSpeed="13.50">
+        <route edges="-E1 -E1.703 E6 E15"/>
+    </vehicle>
+    <vehicle id="motorcycle25" type="motorcycle_motorcycle" depart="2.25" departLane="best" departSpeed="13.50">
+        <route edges="-E24 -E23 -E22 -E11 -E10 -E9 -E9.302 -E8 -E7"/>
+    </vehicle>
+    <vehicle id="motorcycle26" type="motorcycle_motorcycle" depart="2.34" departLane="best" departSpeed="13.50">
+        <route edges="E26 E27 E28 E29 -E37 E19 E20 E32 E2.669"/>
+    </vehicle>
+    <vehicle id="motorcycle28" type="motorcycle_motorcycle" depart="2.52" departLane="best" departSpeed="13.50">
+        <route edges="-E7 E1 E1.596 E2 -E32 -E21 -E19 E37"/>
+    </vehicle>
+    <vehicle id="motorcycle29" type="motorcycle_motorcycle" depart="2.61" departLane="best" departSpeed="13.50">
+        <route edges="-E17 -E16 -E15 E8 E9 E9.823 E10 E39"/>
+    </vehicle>
+    <vehicle id="motorcycle30" type="motorcycle_motorcycle" depart="2.70" departLane="best" departSpeed="13.50">
+        <route edges="-E2.372 -E1 -E1.703 E6 E15 E16 E17"/>
+    </vehicle>
+    <vehicle id="motorcycle31" type="motorcycle_motorcycle" depart="2.79" departLane="best" departSpeed="13.50">
+        <route edges="-E42 -E37 -E18 -E7 E1 E1.596 E2 -E32 -E21 -E19"/>
+    </vehicle>
+    <vehicle id="motorcycle32" type="motorcycle_motorcycle" depart="2.88" departLane="best" departSpeed="13.50">
+        <route edges="-E39 -E10 -E41 -E28 -E27 -E26 E33 E9"/>
+    </vehicle>
+    <vehicle id="motorcycle34" type="motorcycle_motorcycle" depart="3.06" departLane="best" departSpeed="13.50">
+        <route edges="-E5 -E4 E0 E6 E8 -E33 E26 E27 E28 E29"/>
+    </vehicle>
+    <vehicle id="motorcycle35" type="motorcycle_motorcycle" depart="3.15" departLane="best" departSpeed="13.50">
+        <route edges="E1 E1.596 E2 E2.669 -E12 -E11 -E42 -E37 E19 E20 E32 -E2.372"/>
+    </vehicle>
+    <vehicle id="motorcycle36" type="motorcycle_motorcycle" depart="3.24" departLane="best" departSpeed="13.50">
+        <route edges="-E23 -E22 -E11 -E10 -E9 -E9.302 -E8 -E7 E1 E1.596"/>
+    </vehicle>
+    <vehicle id="motorcycle39" type="motorcycle_motorcycle" depart="3.51" departLane="best" departSpeed="13.50">
+        <route edges="-E15 E8 E9 E9.823 E10 E11 E12 -E2"/>
+    </vehicle>
+    <vehicle id="motorcycle40" type="motorcycle_motorcycle" depart="3.60" departLane="best" departSpeed="13.50">
+        <route edges="-E8 E18 E19 E20 E32 -E2.372 -E1"/>
+    </vehicle>
+    <vehicle id="motorcycle41" type="motorcycle_motorcycle" depart="3.69" departLane="best" departSpeed="13.50">
+        <route edges="E18 E25 E33 -E8 E15 E16"/>
+    </vehicle>
+    <vehicle id="motorcycle44" type="motorcycle_motorcycle" depart="3.96" departLane="best" departSpeed="13.50">
+        <route edges="E1.596 E2 -E32 -E21 -E19 E37 -E29 -E28 -E27 -E26 -E25"/>
+    </vehicle>
+    <vehicle id="motorcycle45" type="motorcycle_motorcycle" depart="4.05" departLane="best" departSpeed="13.50">
+        <route edges="-E19 E37 -E29 E41 -E9"/>
+    </vehicle>
+    <vehicle id="motorcycle46" type="motorcycle_motorcycle" depart="4.14" departLane="best" departSpeed="13.50">
+        <route edges="-E38 -E10 -E9 -E9.302 -E8 -E7 E1 E1.596 E2 -E32"/>
+    </vehicle>
+    <vehicle id="motorcycle47" type="motorcycle_motorcycle" depart="4.23" departLane="best" departSpeed="13.50">
+        <route edges="E20 E32 E2.669 -E12 -E11 -E10 -E9 -E9.302 -E8 -E7 E1"/>
+    </vehicle>
+    <vehicle id="motorcycle48" type="motorcycle_motorcycle" depart="4.32" departLane="best" departSpeed="13.50">
+        <route edges="-E13 E6"/>
+    </vehicle>
+    <vehicle id="motorcycle49" type="motorcycle_motorcycle" depart="4.41" departLane="best" departSpeed="13.50">
+        <route edges="-E11 -E42 -E37 E19 E20 E32 -E2.372 -E1 -E1.703"/>
+    </vehicle>
+    <vehicle id="motorcycle51" type="motorcycle_motorcycle" depart="4.59" departLane="best" departSpeed="13.50">
+        <route edges="E33 -E8 E15 E16 E17"/>
+    </vehicle>
+    <vehicle id="motorcycle52" type="motorcycle_motorcycle" depart="4.68" departLane="best" departSpeed="13.50">
+        <route edges="-E17 -E16 -E15 -E7 E1 E1.596"/>
+    </vehicle>
+    <vehicle id="motorcycle55" type="motorcycle_motorcycle" depart="4.95" departLane="best" departSpeed="13.50">
+        <route edges="E26 E27 -E35 -E34 -E26 E33 -E8 -E7 E1 E1.596"/>
+    </vehicle>
+    <vehicle id="motorcycle56" type="motorcycle_motorcycle" depart="5.04" departLane="best" departSpeed="13.50">
+        <route edges="-E40 -E33 -E25 E19 E20 E32 E2.669 -E12 -E11"/>
+    </vehicle>
+    <vehicle id="motorcycle57" type="motorcycle_motorcycle" depart="5.13" departLane="best" departSpeed="13.50">
+        <route edges="E1.596 E2 -E32 -E21 -E19 -E18 -E7 -E0"/>
+    </vehicle>
+    <vehicle id="motorcycle58" type="motorcycle_motorcycle" depart="5.22" departLane="best" departSpeed="13.50">
+        <route edges="-E15 -E7 E1 E1.596 E2"/>
+    </vehicle>
+    <vehicle id="motorcycle60" type="motorcycle_motorcycle" depart="5.40" departLane="best" departSpeed="13.50">
+        <route edges="-E9 -E9.302 -E8 -E7"/>
+    </vehicle>
+    <vehicle id="motorcycle61" type="motorcycle_motorcycle" depart="5.49" departLane="best" departSpeed="13.50">
+        <route edges="-E1.703 E6 E18 E37"/>
+    </vehicle>
+    <vehicle id="motorcycle62" type="motorcycle_motorcycle" depart="5.58" departLane="best" departSpeed="13.50">
+        <route edges="-E15 -E7 E1 E1.596 E2"/>
+    </vehicle>
+    <vehicle id="motorcycle63" type="motorcycle_motorcycle" depart="5.67" departLane="best" departSpeed="13.50">
+        <route edges="-E39 -E42 -E37 E19 E20 -E31"/>
+    </vehicle>
+    <vehicle id="motorcycle64" type="motorcycle_motorcycle" depart="5.76" departLane="best" departSpeed="13.50">
+        <route edges="-E15 E18 E19 E20 E32 -E2.372"/>
+    </vehicle>
+    <vehicle id="motorcycle65" type="motorcycle_motorcycle" depart="5.85" departLane="best" departSpeed="13.50">
+        <route edges="-E39 -E42 -E37 -E18"/>
+    </vehicle>
+    <vehicle id="motorcycle66" type="motorcycle_motorcycle" depart="5.94" departLane="best" departSpeed="13.50">
+        <route edges="E11 E12 -E2 -E2.372 -E1 -E1.703 E6 E18 E19"/>
+    </vehicle>
+    <vehicle id="motorcycle67" type="motorcycle_motorcycle" depart="6.03" departLane="best" departSpeed="13.50">
+        <route edges="-E36 E35 -E27 -E26 E33 -E8 -E7 E1 E1.596 E2 -E32 -E21"/>
+    </vehicle>
+    <vehicle id="motorcycle68" type="motorcycle_motorcycle" depart="6.12" departLane="best" departSpeed="13.50">
+        <route edges="E19 E20 E32 E2.669 -E12 -E11 E38"/>
+    </vehicle>
+    <vehicle id="motorcycle69" type="motorcycle_motorcycle" depart="6.21" departLane="best" departSpeed="13.50">
+        <route edges="E9 E9.823 E10 -E42"/>
+    </vehicle>
+    <vehicle id="motorcycle70" type="motorcycle_motorcycle" depart="6.30" departLane="best" departSpeed="13.50">
+        <route edges="-E22 -E11 -E10 -E41 -E28"/>
+    </vehicle>
+    <vehicle id="motorcycle71" type="motorcycle_motorcycle" depart="6.39" departLane="best" departSpeed="13.50">
+        <route edges="-E1 -E1.703 E6 E18 E19 E21"/>
+    </vehicle>
+    <vehicle id="motorcycle72" type="motorcycle_motorcycle" depart="6.48" departLane="best" departSpeed="13.50">
+        <route edges="-E17 -E16 -E15 E8 E9 E9.823 E10"/>
+    </vehicle>
+    <vehicle id="motorcycle73" type="motorcycle_motorcycle" depart="6.57" departLane="best" departSpeed="13.50">
+        <route edges="E33 E9 E9.823 E10 E11 E22 E23 E24"/>
+    </vehicle>
+    <vehicle id="motorcycle74" type="motorcycle_motorcycle" depart="6.66" departLane="best" departSpeed="13.50">
+        <route edges="E11 E12 E3"/>
+    </vehicle>
+    <vehicle id="motorcycle75" type="motorcycle_motorcycle" depart="6.75" departLane="best" departSpeed="13.50">
+        <route edges="-E11 -E42 -E37 E19 E20 E32 -E2.372 -E1 -E1.703 E6"/>
+    </vehicle>
+    <vehicle id="motorcycle76" type="motorcycle_motorcycle" depart="6.84" departLane="best" departSpeed="13.50">
+        <route edges="-E15 E8 E9 E9.823 E10 E11 E12"/>
+    </vehicle>
+    <vehicle id="motorcycle78" type="motorcycle_motorcycle" depart="7.02" departLane="best" departSpeed="13.50">
+        <route edges="-E1 -E1.703 E6 E8 E9 E9.823 E10 E11 E12"/>
+    </vehicle>
+    <vehicle id="motorcycle79" type="motorcycle_motorcycle" depart="7.11" departLane="best" departSpeed="13.50">
+        <route edges="-E13 E6 E8 -E33 -E25"/>
+    </vehicle>
+    <vehicle id="motorcycle80" type="motorcycle_motorcycle" depart="7.20" departLane="best" departSpeed="13.50">
+        <route edges="-E24 -E23 -E22 -E11 -E42 -E37 E25 E33"/>
+    </vehicle>
+    <vehicle id="motorcycle81" type="motorcycle_motorcycle" depart="7.29" departLane="best" departSpeed="13.50">
+        <route edges="E35 -E27 -E26 E33 -E8 -E7 -E0 E4"/>
+    </vehicle>
+    <vehicle id="motorcycle82" type="motorcycle_motorcycle" depart="7.38" departLane="best" departSpeed="13.50">
+        <route edges="-E2 -E2.372 -E1 -E1.703 E6 E8 E9 E9.823"/>
+    </vehicle>
+    <vehicle id="motorcycle83" type="motorcycle_motorcycle" depart="7.47" departLane="best" departSpeed="13.50">
+        <route edges="-E32 -E21 -E19 E25"/>
+    </vehicle>
+    <vehicle id="motorcycle84" type="motorcycle_motorcycle" depart="7.56" departLane="best" departSpeed="13.50">
+        <route edges="E41 -E9 -E9.302 -E8 -E7 E1 E1.596 E2"/>
+    </vehicle>
+    <vehicle id="motorcycle85" type="motorcycle_motorcycle" depart="7.65" departLane="best" departSpeed="13.50">
+        <route edges="-E3 -E12 -E11 -E42 -E37 E25"/>
+    </vehicle>
+    <vehicle id="motorcycle86" type="motorcycle_motorcycle" depart="7.74" departLane="best" departSpeed="13.50">
+        <route edges="E33 -E8 E15 E16"/>
+    </vehicle>
+    <vehicle id="motorcycle87" type="motorcycle_motorcycle" depart="7.83" departLane="best" departSpeed="13.50">
+        <route edges="E0 E1 E1.596 E2 E2.669 -E12 -E11"/>
+    </vehicle>
+    <vehicle id="motorcycle88" type="motorcycle_motorcycle" depart="7.92" departLane="best" departSpeed="13.50">
+        <route edges="-E7 E1 E1.596 E2 -E32 -E21 -E19 E25 E26 E27 -E35"/>
+    </vehicle>
+    <vehicle id="motorcycle90" type="motorcycle_motorcycle" depart="8.10" departLane="best" departSpeed="13.50">
+        <route edges="-E1.703 E6 E18 E25"/>
+    </vehicle>
+    <vehicle id="motorcycle91" type="motorcycle_motorcycle" depart="8.19" departLane="best" departSpeed="13.50">
+        <route edges="E10 -E42 -E37 -E18 E15 E16 E17"/>
+    </vehicle>
+    <vehicle id="motorcycle93" type="motorcycle_motorcycle" depart="8.37" departLane="best" departSpeed="13.50">
+        <route edges="-E17 -E16 -E15 E18 E19 E20 E32 -E2.372"/>
+    </vehicle>
+    <vehicle id="motorcycle95" type="motorcycle_motorcycle" depart="8.55" departLane="best" departSpeed="13.50">
+        <route edges="-E36 E35 E28 E41 E10 E11 E12"/>
+    </vehicle>
+    <vehicle id="motorcycle96" type="motorcycle_motorcycle" depart="8.64" departLane="best" departSpeed="13.50">
+        <route edges="E33 -E8 E18 E19 E20 E32 E2.669 -E12 -E11"/>
+    </vehicle>
+    <vehicle id="motorcycle97" type="motorcycle_motorcycle" depart="8.73" departLane="best" departSpeed="13.50">
+        <route edges="-E17 -E16 -E15 E18 E19 E20 E32 -E2.372 -E1 -E1.703"/>
+    </vehicle>
+    <vehicle id="motorcycle99" type="motorcycle_motorcycle" depart="8.91" departLane="best" departSpeed="13.50">
+        <route edges="-E1 -E1.703 E6 E8 -E33 E26 E27 -E35 -E34"/>
+    </vehicle>
+    <vehicle id="motorcycle100" type="motorcycle_motorcycle" depart="9.00" departLane="best" departSpeed="13.50">
+        <route edges="-E24 -E23 -E22 E12 -E2 -E2.372"/>
+    </vehicle>
+    <vehicle id="motorcycle101" type="motorcycle_motorcycle" depart="9.09" departLane="best" departSpeed="13.50">
+        <route edges="-E39 -E42 -E37 E19 E20 E32 E2.669 -E12"/>
+    </vehicle>
+    <vehicle id="motorcycle103" type="motorcycle_motorcycle" depart="9.27" departLane="best" departSpeed="13.50">
+        <route edges="-E33 -E25 E19 E21"/>
+    </vehicle>
+    <vehicle id="motorcycle104" type="motorcycle_motorcycle" depart="9.36" departLane="best" departSpeed="13.50">
+        <route edges="-E16 -E15 E8"/>
+    </vehicle>
+    <vehicle id="motorcycle106" type="motorcycle_motorcycle" depart="9.54" departLane="best" departSpeed="13.50">
+        <route edges="E26 E27 E28 E29 -E37 E19 E20 E32 E2.669"/>
+    </vehicle>
+    <vehicle id="motorcycle107" type="motorcycle_motorcycle" depart="9.63" departLane="best" departSpeed="13.50">
+        <route edges="E33 E9 E9.823 -E41 E29 E42"/>
+    </vehicle>
+    <vehicle id="motorcycle108" type="motorcycle_motorcycle" depart="9.72" departLane="best" departSpeed="13.50">
+        <route edges="E27 E28 E29 -E37 E19 E20 E32"/>
+    </vehicle>
+    <vehicle id="motorcycle109" type="motorcycle_motorcycle" depart="9.81" departLane="best" departSpeed="13.50">
+        <route edges="-E40 -E8"/>
+    </vehicle>
+    <vehicle id="motorcycle110" type="motorcycle_motorcycle" depart="9.90" departLane="best" departSpeed="13.50">
+        <route edges="E0 E1 E1.596 E2 E2.669"/>
+    </vehicle>
+    <vehicle id="motorcycle111" type="motorcycle_motorcycle" depart="9.99" departLane="best" departSpeed="13.50">
+        <route edges="-E5 -E4 E0 E6 E18 E25 E33 -E8"/>
+    </vehicle>
+    <vehicle id="motorcycle112" type="motorcycle_motorcycle" depart="10.08" departLane="best" departSpeed="13.50">
+        <route edges="E25 E26 E27 E28 E41 E10"/>
+    </vehicle>
+    <vehicle id="motorcycle115" type="motorcycle_motorcycle" depart="10.35" departLane="best" departSpeed="13.50">
+        <route edges="-E36 E35 E28 E41 E10 E11 E22"/>
+    </vehicle>
+    <vehicle id="motorcycle116" type="motorcycle_motorcycle" depart="10.44" departLane="best" departSpeed="13.50">
+        <route edges="E32 -E2.372 -E1 -E1.703 -E0"/>
+    </vehicle>
+    <vehicle id="motorcycle118" type="motorcycle_motorcycle" depart="10.62" departLane="best" departSpeed="13.50">
+        <route edges="-E11 -E10 -E9 -E9.302"/>
+    </vehicle>
+    <vehicle id="motorcycle119" type="motorcycle_motorcycle" depart="10.71" departLane="best" departSpeed="13.50">
+        <route edges="-E2 -E2.372 -E1 -E1.703 E6"/>
+    </vehicle>
+    <vehicle id="motorcycle120" type="motorcycle_motorcycle" depart="10.80" departLane="best" departSpeed="13.50">
+        <route edges="-E37 -E18"/>
+    </vehicle>
+    <vehicle id="motorcycle122" type="motorcycle_motorcycle" depart="10.98" departLane="best" departSpeed="13.50">
+        <route edges="-E19 E37 -E29 E41 E10"/>
+    </vehicle>
+    <vehicle id="motorcycle123" type="motorcycle_motorcycle" depart="11.07" departLane="best" departSpeed="13.50">
+        <route edges="-E9 -E9.302 -E33 -E25 E19 E21"/>
+    </vehicle>
+    <vehicle id="motorcycle124" type="motorcycle_motorcycle" depart="11.16" departLane="best" departSpeed="13.50">
+        <route edges="-E4 E0 E6 E18 E25 E33 -E8 -E7"/>
+    </vehicle>
+    <vehicle id="motorcycle125" type="motorcycle_motorcycle" depart="11.25" departLane="best" departSpeed="13.50">
+        <route edges="-E42 -E37 -E18 -E7 E1"/>
+    </vehicle>
+    <vehicle id="motorcycle126" type="motorcycle_motorcycle" depart="11.34" departLane="best" departSpeed="13.50">
+        <route edges="-E12 -E11 -E10 -E9 -E9.302 -E8 -E7 E1 E1.596 E2 -E32 -E21 -E19"/>
+    </vehicle>
+    <vehicle id="motorcycle127" type="motorcycle_motorcycle" depart="11.43" departLane="best" departSpeed="13.50">
+        <route edges="-E12 -E11 -E42 -E37 E25 E26 E27"/>
+    </vehicle>
+    <vehicle id="motorcycle128" type="motorcycle_motorcycle" depart="11.52" departLane="best" departSpeed="13.50">
+        <route edges="-E21 -E19 E37 E42 E11 E12 -E2 -E2.372 -E1 -E1.703 E6"/>
+    </vehicle>
+    <vehicle id="motorcycle129" type="motorcycle_motorcycle" depart="11.61" departLane="best" departSpeed="13.50">
+        <route edges="E2.669 -E12 -E11 -E10 -E9 -E9.302 -E8 -E7 -E0"/>
+    </vehicle>
+    <vehicle id="motorcycle130" type="motorcycle_motorcycle" depart="11.70" departLane="best" departSpeed="13.50">
+        <route edges="-E4 E0 E6 E18 E37 E42"/>
+    </vehicle>
+    <vehicle id="motorcycle131" type="motorcycle_motorcycle" depart="11.79" departLane="best" departSpeed="13.50">
+        <route edges="E2 -E32 -E21 -E19 E25 E26 E27 -E35"/>
+    </vehicle>
+    <vehicle id="motorcycle132" type="motorcycle_motorcycle" depart="11.88" departLane="best" departSpeed="13.50">
+        <route edges="E29 -E37 E19 E20"/>
+    </vehicle>
+    <vehicle id="motorcycle134" type="motorcycle_motorcycle" depart="12.06" departLane="best" departSpeed="13.50">
+        <route edges="-E211 -E19 -E18 -E7 -E0 E4 E5"/>
+    </vehicle>
+    <vehicle id="motorcycle135" type="motorcycle_motorcycle" depart="12.15" departLane="best" departSpeed="13.50">
+        <route edges="E9.823 -E41 -E28 -E27 -E26 E33 -E8 -E7"/>
+    </vehicle>
+    <vehicle id="motorcycle136" type="motorcycle_motorcycle" depart="12.24" departLane="best" departSpeed="13.50">
+        <route edges="-E16 -E15 E18 E37 E42 -E10"/>
+    </vehicle>
+    <vehicle id="motorcycle137" type="motorcycle_motorcycle" depart="12.33" departLane="best" departSpeed="13.50">
+        <route edges="-E13 E6"/>
+    </vehicle>
+    <vehicle id="motorcycle138" type="motorcycle_motorcycle" depart="12.42" departLane="best" departSpeed="13.50">
+        <route edges="E8 -E33 -E25 E37 E42 -E10"/>
+    </vehicle>
+    <vehicle id="motorcycle140" type="motorcycle_motorcycle" depart="12.60" departLane="best" departSpeed="13.50">
+        <route edges="-E28 -E27 -E26 -E25 E19 E20 E32 -E2.372 -E1"/>
+    </vehicle>
+    <vehicle id="motorcycle141" type="motorcycle_motorcycle" depart="12.69" departLane="best" departSpeed="13.50">
+        <route edges="-E4 E0 E6 E18 E19 E21"/>
+    </vehicle>
+    <vehicle id="motorcycle142" type="motorcycle_motorcycle" depart="12.78" departLane="best" departSpeed="13.50">
+        <route edges="-E16 -E15 E8 E9"/>
+    </vehicle>
+    <vehicle id="motorcycle145" type="motorcycle_motorcycle" depart="13.05" departLane="best" departSpeed="13.50">
+        <route edges="E29 -E37 E19 E20 E32 -E2.372 -E1 -E1.703 E6"/>
+    </vehicle>
+    <vehicle id="motorcycle146" type="motorcycle_motorcycle" depart="13.14" departLane="best" departSpeed="13.50">
+        <route edges="E12 -E2 -E2.372 -E1 -E1.703 E6 E8 E40"/>
+    </vehicle>
+    <vehicle id="motorcycle147" type="motorcycle_motorcycle" depart="13.23" departLane="best" departSpeed="13.50">
+        <route edges="E10 -E42 -E37 E19 E20 E32"/>
+    </vehicle>
+    <vehicle id="motorcycle148" type="motorcycle_motorcycle" depart="13.32" departLane="best" departSpeed="13.50">
+        <route edges="-E16 -E15 -E7 -E0 E4"/>
+    </vehicle>
+    <vehicle id="motorcycle149" type="motorcycle_motorcycle" depart="13.41" departLane="best" departSpeed="13.50">
+        <route edges="E6 E8"/>
+    </vehicle>
+    <vehicle id="motorcycle150" type="motorcycle_motorcycle" depart="13.50" departLane="best" departSpeed="13.50">
+        <route edges="E1.596 E2 -E32 -E21 -E19 E25 E26 E27 -E35"/>
+    </vehicle>
+    <vehicle id="motorcycle151" type="motorcycle_motorcycle" depart="13.59" departLane="best" departSpeed="13.50">
+        <route edges="E33 -E8 -E7 -E0"/>
+    </vehicle>
+    <vehicle id="motorcycle152" type="motorcycle_motorcycle" depart="13.68" departLane="best" departSpeed="13.50">
+        <route edges="-E13 E6 E18 E19 E20"/>
+    </vehicle>
+    <vehicle id="motorcycle153" type="motorcycle_motorcycle" depart="13.77" departLane="best" departSpeed="13.50">
+        <route edges="-E25 -E18 -E7 -E0 E4"/>
+    </vehicle>
+    <vehicle id="motorcycle154" type="motorcycle_motorcycle" depart="13.86" departLane="best" departSpeed="13.50">
+        <route edges="-E8 E18 E37 E42 E38"/>
+    </vehicle>
+    <vehicle id="motorcycle155" type="motorcycle_motorcycle" depart="13.95" departLane="best" departSpeed="13.50">
+        <route edges="E9.823 E10 E11 E22"/>
+    </vehicle>
+    <vehicle id="motorcycle156" type="motorcycle_motorcycle" depart="14.04" departLane="best" departSpeed="13.50">
+        <route edges="-E32 -E21 -E19 -E18 E8"/>
+    </vehicle>
+    <vehicle id="motorcycle157" type="motorcycle_motorcycle" depart="14.13" departLane="best" departSpeed="13.50">
+        <route edges="-E12 -E11 -E10 -E9 -E9.302 -E8 -E7 -E0"/>
+    </vehicle>
+    <vehicle id="motorcycle158" type="motorcycle_motorcycle" depart="14.22" departLane="best" departSpeed="13.50">
+        <route edges="-E40 E9 E9.823 E10 E11 E22 E23"/>
+    </vehicle>
+    <vehicle id="motorcycle159" type="motorcycle_motorcycle" depart="14.31" departLane="best" departSpeed="13.50">
+        <route edges="-E211 E20 E32 -E2.372 -E1 -E1.703 E6"/>
+    </vehicle>
+    <vehicle id="motorcycle160" type="motorcycle_motorcycle" depart="14.40" departLane="best" departSpeed="13.50">
+        <route edges="-E1 -E1.703 E6 E8"/>
+    </vehicle>
+    <vehicle id="motorcycle161" type="motorcycle_motorcycle" depart="14.49" departLane="best" departSpeed="13.50">
+        <route edges="E11 E12 -E2 -E2.372 -E1 -E1.703 E6 E18 E25 E33 -E8 -E7 E1"/>
+    </vehicle>
+    <vehicle id="motorcycle162" type="motorcycle_motorcycle" depart="14.58" departLane="best" departSpeed="13.50">
+        <route edges="E10 -E42 -E37 -E18 -E7 E1 E1.596 E2"/>
+    </vehicle>
+    <vehicle id="motorcycle163" type="motorcycle_motorcycle" depart="14.67" departLane="best" departSpeed="13.50">
+        <route edges="-E1 -E1.703 E6 E8 E9 E9.823 E10"/>
+    </vehicle>
+    <vehicle id="motorcycle164" type="motorcycle_motorcycle" depart="14.76" departLane="best" departSpeed="13.50">
+        <route edges="E33 -E8 E15"/>
+    </vehicle>
+    <vehicle id="motorcycle165" type="motorcycle_motorcycle" depart="14.85" departLane="best" departSpeed="13.50">
+        <route edges="-E9 -E9.302 -E8 -E7 E13"/>
+    </vehicle>
+    <vehicle id="motorcycle166" type="motorcycle_motorcycle" depart="14.94" departLane="best" departSpeed="13.50">
+        <route edges="-E38 E11 E12 -E2 -E2.372 -E1"/>
+    </vehicle>
+    <vehicle id="motorcycle170" type="motorcycle_motorcycle" depart="15.30" departLane="best" departSpeed="13.50">
+        <route edges="E0 E6 E8 -E33 -E25 -E18"/>
+    </vehicle>
+    <vehicle id="motorcycle171" type="motorcycle_motorcycle" depart="15.39" departLane="best" departSpeed="13.50">
+        <route edges="-E2.372 -E1 -E1.703 E6 E8 E9 E9.823 E10 E38"/>
+    </vehicle>
+    <vehicle id="motorcycle172" type="motorcycle_motorcycle" depart="15.48" departLane="best" departSpeed="13.50">
+        <route edges="-E2.372 -E1 -E1.703 E6"/>
+    </vehicle>
+    <vehicle id="motorcycle173" type="motorcycle_motorcycle" depart="15.57" departLane="best" departSpeed="13.50">
+        <route edges="-E211 -E19 E25 E33 E9 E9.823"/>
+    </vehicle>
+    <vehicle id="motorcycle174" type="motorcycle_motorcycle" depart="15.66" departLane="best" departSpeed="13.50">
+        <route edges="-E13 E1 E1.596 E2 E2.669"/>
+    </vehicle>
+    <vehicle id="motorcycle175" type="motorcycle_motorcycle" depart="15.75" departLane="best" departSpeed="13.50">
+        <route edges="-E28 -E27 -E26 E33 -E8 -E7"/>
+    </vehicle>
+    <vehicle id="motorcycle176" type="motorcycle_motorcycle" depart="15.84" departLane="best" departSpeed="13.50">
+        <route edges="E28 E41 -E9 -E9.302 -E8 -E7 E1 E1.596 E2"/>
+    </vehicle>
+    <vehicle id="motorcycle177" type="motorcycle_motorcycle" depart="15.93" departLane="best" departSpeed="13.50">
+        <route edges="E25 E26 E27 E28 E41 E10"/>
+    </vehicle>
+    <vehicle id="motorcycle178" type="motorcycle_motorcycle" depart="16.02" departLane="best" departSpeed="13.50">
+        <route edges="-E40 -E33 -E25 E19 E20 E32 E2.669 E3"/>
+    </vehicle>
+    <vehicle id="motorcycle179" type="motorcycle_motorcycle" depart="16.11" departLane="best" departSpeed="13.50">
+        <route edges="E26 E27 E28 E29 -E37 E19 E20 E32 -E2.372 -E1 -E1.703"/>
+    </vehicle>
+    <vehicle id="motorcycle180" type="motorcycle_motorcycle" depart="16.20" departLane="best" departSpeed="13.50">
+        <route edges="-E17 -E16 -E15 E8 -E33 E26 E27 E28 E29 -E37"/>
+    </vehicle>
+    <vehicle id="motorcycle182" type="motorcycle_motorcycle" depart="16.38" departLane="best" departSpeed="13.50">
+        <route edges="-E13 E6 E8 -E33 E26 E27 E28 E29"/>
+    </vehicle>
+    <vehicle id="motorcycle184" type="motorcycle_motorcycle" depart="16.56" departLane="best" departSpeed="13.50">
+        <route edges="E28 E41 -E9 -E9.302 -E8 -E7 -E0 E4"/>
+    </vehicle>
+    <vehicle id="motorcycle185" type="motorcycle_motorcycle" depart="16.65" departLane="best" departSpeed="13.50">
+        <route edges="E34 E35 -E27 -E26 -E25 E19 E20 E32 E2.669 E3"/>
+    </vehicle>
+    <vehicle id="motorcycle186" type="motorcycle_motorcycle" depart="16.74" departLane="best" departSpeed="13.50">
+        <route edges="-E36 E35 -E27 -E26 -E25 E19 E20 E32 -E2.372 -E1"/>
+    </vehicle>
+    <vehicle id="motorcycle187" type="motorcycle_motorcycle" depart="16.83" departLane="best" departSpeed="13.50">
+        <route edges="-E8 E18 E37 E42 E11 E22"/>
+    </vehicle>
+    <vehicle id="motorcycle188" type="motorcycle_motorcycle" depart="16.92" departLane="best" departSpeed="13.50">
+        <route edges="-E38 E11 E12 E3"/>
+    </vehicle>
+    <vehicle id="motorcycle191" type="motorcycle_motorcycle" depart="17.19" departLane="best" departSpeed="13.50">
+        <route edges="E9 E9.823 E10 E11 E22 E23"/>
+    </vehicle>
+    <vehicle id="motorcycle192" type="motorcycle_motorcycle" depart="17.28" departLane="best" departSpeed="13.50">
+        <route edges="-E1.703 E6 E8 E9 E9.823 E10 E11"/>
+    </vehicle>
+    <vehicle id="motorcycle193" type="motorcycle_motorcycle" depart="17.37" departLane="best" departSpeed="13.50">
+        <route edges="E32 -E2.372 -E1 -E1.703 E6 E15 E16 E17"/>
+    </vehicle>
+    <vehicle id="motorcycle194" type="motorcycle_motorcycle" depart="17.46" departLane="best" departSpeed="13.50">
+        <route edges="E26 E27 -E35 -E34 -E26 E33 -E8 -E7 E1 E1.596 E2"/>
+    </vehicle>
+    <vehicle id="motorcycle195" type="motorcycle_motorcycle" depart="17.55" departLane="best" departSpeed="13.50">
+        <route edges="-E19 E37 E42 E39"/>
+    </vehicle>
+    <vehicle id="motorcycle196" type="motorcycle_motorcycle" depart="17.64" departLane="best" departSpeed="13.50">
+        <route edges="E12 -E2 -E2.372 -E1 -E1.703 E6 E18 E25"/>
+    </vehicle>
+    <vehicle id="motorcycle197" type="motorcycle_motorcycle" depart="17.73" departLane="best" departSpeed="13.50">
+        <route edges="-E211 -E19 E25 E26 E27 -E35 E36"/>
+    </vehicle>
+    <vehicle id="motorcycle198" type="motorcycle_motorcycle" depart="17.82" departLane="best" departSpeed="13.50">
+        <route edges="E15 E16 E17"/>
+    </vehicle>
+    <vehicle id="motorcycle200" type="motorcycle_motorcycle" depart="18.00" departLane="best" departSpeed="13.50">
+        <route edges="E26 E27 -E35 -E34 -E26 E33 -E8 -E7 E1"/>
+    </vehicle>
+    <vehicle id="motorcycle201" type="motorcycle_motorcycle" depart="18.09" departLane="best" departSpeed="13.50">
+        <route edges="E8 -E33 -E25 E19 E20 E32 E2.669"/>
+    </vehicle>
+    <vehicle id="motorcycle202" type="motorcycle_motorcycle" depart="18.18" departLane="best" departSpeed="13.50">
+        <route edges="E0 E6 E18 E19 E20 E32 -E2.372 -E1"/>
+    </vehicle>
+    <vehicle id="motorcycle205" type="motorcycle_motorcycle" depart="18.45" departLane="best" departSpeed="13.50">
+        <route edges="E20 E32 E2.669 -E12 -E11 -E10 -E9 -E9.302 -E8"/>
+    </vehicle>
+    <vehicle id="motorcycle207" type="motorcycle_motorcycle" depart="18.63" departLane="best" departSpeed="13.50">
+        <route edges="E310 E32 -E2.372 -E1 -E1.703 -E0 E4"/>
+    </vehicle>
+    <vehicle id="motorcycle208" type="motorcycle_motorcycle" depart="18.72" departLane="best" departSpeed="13.50">
+        <route edges="E27 -E35 -E34 -E26 E33 -E8 -E7 E1 E1.596 E2 -E32"/>
+    </vehicle>
+    <vehicle id="motorcycle209" type="motorcycle_motorcycle" depart="18.81" departLane="best" departSpeed="13.50">
+        <route edges="-E42 -E37 -E18 E15 E16"/>
+    </vehicle>
+</routes>

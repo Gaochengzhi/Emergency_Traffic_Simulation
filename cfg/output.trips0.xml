@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2023-03-17 16:05:43.425886 by randomTrips.py UNKNOWN
+<configuration>
+    <end value="20000"/>
+    <lanes value="True"/>
+    <max-distance value="500000.0"/>
+    <min-distance value="1000.0"/>
+    <net-file value="net.xml"/>
+    <period value="0.8"/>
+    <route-file value="output.trips1.xml"/>
+    <seed value="70"/>
+    <prefix value="passenger"/>
+    <validate value="True"/>
+    <vehicle-class value="passenger"/>
+</configuration>
+-->
+
+<!-- generated on 2023-03-17 16:05:43 by Eclipse SUMO duarouter Version 1.14.1
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/duarouterConfiguration.xsd">
+
+    <input>
+        <net-file value="net.xml"/>
+        <route-files value="trips.trips.xml"/>
+    </input>
+
+    <output>
+        <output-file value="output.trips1.xml"/>
+        <alternatives-output value="NUL"/>
+    </output>
+
+    <time>
+        <begin value="0"/>
+        <end value="20000"/>
+    </time>
+
+    <report>
+        <no-warnings value="true"/>
+        <ignore-errors value="true"/>
+        <no-step-log value="true"/>
+    </report>
+
+</configuration>
+-->
+
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+    <vType id="emergency_v" vClass="emergency" guiShape="emergency" accel="3.8"
+        decel="4.5" sigma="0.5" length="8" maxSpeed="43" 
+        speedFactor="3"
+        lcSublane="0"
+        lcSpeedGain="100000"
+        lcOpposite="1000"
+        lcOvertakeRight="1"
+        lcSpeedGainRight="1000"
+        lcOvertakeDeltaSpeedFactor="1"
+        lcSpeedGainLookahead="1000"
+        minGapLat="0"
+        lcAssertive="1"
+        lcTimeToImpatience="0"
+        carFollowModel="EIDM"
+        >
+        <param key="has.bluelight.device" value="true"/>
+    </vType>
+    <route id="em_route" edges="E6 E8 E9 E9.823 E10 E11 "/>
+
+</routes>
