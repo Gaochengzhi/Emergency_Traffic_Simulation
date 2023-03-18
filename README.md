@@ -2,11 +2,11 @@
 
 This project aims to simulate emergency traffic on city roads using SUMO (Simulation of Urban Mobility).
 
-![Screen Shot 2023-03-18 at 10.43.53](/Users/kounarushi/mycode/Emergency_Traffic_Simulation/assets/Screen%20Shot%202023-03-18%20at%2010.43.53.jpg)
+![Screen Shot 2023-03-18 at 10.43.53](assets/Screen%20Shot%202023-03-18%20at%2010.43.53.jpg)
 
 
 
-![Screen Shot 2023-03-18 at 10.42.17](/Users/kounarushi/mycode/Emergency_Traffic_Simulation/assets/Screen%20Shot%202023-03-18%20at%2010.42.17.jpg)
+![Screen Shot 2023-03-18 at 10.42.17](assets/Screen%20Shot%202023-03-18%20at%2010.42.17.jpg)
 
 ## Getting Started
 
