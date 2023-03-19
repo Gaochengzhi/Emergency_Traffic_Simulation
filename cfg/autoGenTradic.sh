@@ -9,7 +9,7 @@ mv vTypeDistributions.add.xml vType.xml
 
 python3 $SUMO_HOME/tools/randomTrips.py \
 -n net.xml \
--p 0.06 \
+-p 0.02 \
 --fringe-factor 1 \
 -l \
 --min-distance 1000 \
@@ -19,7 +19,7 @@ python3 $SUMO_HOME/tools/randomTrips.py \
 --seed 70 \
 --validate \
 --prefix passenger \
---trip-attributes="type=\"car\" departSpeed=\"max\"" \
+--trip-attributes="type=\"car\" departSpeed=\"max\" departLane=\"best\"" \
 --additional-file vType.xml
 
 
@@ -35,7 +35,7 @@ python3 $SUMO_HOME/tools/randomTrips.py \
 --seed 30 \
 --validate \
 --prefix bus \
---trip-attributes="type=\"bus\" departSpeed=\"max\"" \
+--trip-attributes="type=\"bus\" departLane=\"best\" departSpeed=\"max\"" \
 --additional-file vType.xml
 
 python3 $SUMO_HOME/tools/randomTrips.py \
@@ -50,7 +50,7 @@ python3 $SUMO_HOME/tools/randomTrips.py \
 --seed 30 \
 --validate \
 --prefix motorcycle \
---trip-attributes="type=\"motor\" departSpeed=\"max\"" \
+--trip-attributes="type=\"motor\" departLane=\"best\" departSpeed=\"max\"" \
 --additional-file vType.xml
 
 

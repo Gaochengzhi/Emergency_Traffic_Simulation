@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- generated on 2023-03-18 21:36:10.004671 by randomTrips.py UNKNOWN
+<!-- generated on 2023-03-19 11:22:00.754619 by randomTrips.py UNKNOWN
 <configuration>
     <additional-files value="vType.xml"/>
     <end value="90"/>
@@ -11,13 +11,13 @@
     <period value="0.9"/>
     <route-file value="output.trips2.xml"/>
     <seed value="30"/>
-    <trip-attributes value="type=&quot;bus&quot; departSpeed=&quot;max&quot;"/>
+    <trip-attributes value="type=&quot;bus&quot; departLane=&quot;best&quot; departSpeed=&quot;max&quot;"/>
     <prefix value="bus"/>
     <validate value="True"/>
 </configuration>
 -->
 
-<!-- generated on 2023-03-18 21:36:09 by Eclipse SUMO duarouter Version 1.14.1
+<!-- generated on 2023-03-19 11:22:00 by Eclipse SUMO duarouter Version 1.14.1
 <configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/duarouterConfiguration.xsd">
 
     <input>
@@ -46,469 +46,317 @@
 -->
 
 <routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
-    <vType id="bus891" length="11.05" maxSpeed="42.07" vClass="bus" carFollowModel="EIDM" accel="0.984" decel="3.974" emergencyDecel="6.910" tau="1.208">
-        <param key="myCustomParameter" value="4.950"/>
-    </vType>
-    <vehicle id="bus0" type="bus891" depart="0.00" departSpeed="max">
+    <vType id="bus891" length="11.08" minGap="3.00" maxSpeed="40.07" vClass="bus" carFollowModel="EIDM" accel="1.223" decel="4.188" emergencyDecel="6.643" tau="1.153"/>
+    <vehicle id="bus0" type="bus891" depart="0.00" departLane="best" departSpeed="max">
         <route edges="-E8 E18 E19 E20 -E31"/>
     </vehicle>
-    <vType id="bus712" length="11.53" maxSpeed="40.12" vClass="bus" carFollowModel="EIDM" accel="0.906" decel="3.941" emergencyDecel="6.926" tau="1.221">
-        <param key="myCustomParameter" value="1.542"/>
-    </vType>
-    <vehicle id="bus1" type="bus712" depart="0.90" departSpeed="max">
+    <vType id="bus712" length="10.88" minGap="3.00" maxSpeed="43.40" vClass="bus" carFollowModel="EIDM" accel="1.110" decel="4.349" emergencyDecel="6.903" tau="1.209"/>
+    <vehicle id="bus1" type="bus712" depart="0.90" departLane="best" departSpeed="max">
         <route edges="E9 E9.823 -E41 -E28 -E27 -E26 E33 -E8 -E7 E1"/>
     </vehicle>
-    <vType id="bus45" length="12.80" maxSpeed="41.88" vClass="bus" carFollowModel="EIDM" accel="1.396" decel="3.730" emergencyDecel="7.014" tau="1.134">
-        <param key="myCustomParameter" value="6.253"/>
-    </vType>
-    <vehicle id="bus2" type="bus45" depart="1.80" departSpeed="max">
+    <vType id="bus45" length="12.62" minGap="3.00" maxSpeed="42.73" vClass="bus" carFollowModel="EIDM" accel="1.419" decel="4.338" emergencyDecel="7.456" tau="1.194"/>
+    <vehicle id="bus2" type="bus45" depart="1.80" departLane="best" departSpeed="max">
         <route edges="-E21 -E19 E37 -E29 -E28 -E27 -E26 -E25 E19 E20 E32 E2.669 -E12 -E11 -E10"/>
     </vehicle>
-    <vType id="bus491" length="11.68" maxSpeed="42.30" vClass="bus" carFollowModel="EIDM" accel="1.005" decel="3.824" emergencyDecel="7.038" tau="1.240">
-        <param key="myCustomParameter" value="6.343"/>
-    </vType>
-    <vehicle id="bus3" type="bus491" depart="2.70" departSpeed="max">
+    <vType id="bus491" length="12.58" minGap="3.00" maxSpeed="43.29" vClass="bus" carFollowModel="EIDM" accel="1.019" decel="3.806" emergencyDecel="7.136" tau="1.180"/>
+    <vehicle id="bus3" type="bus491" depart="2.70" departLane="best" departSpeed="max">
         <route edges="-E16 -E15 E8 E9 E9.823 E10 E38"/>
     </vehicle>
-    <vType id="bus589" length="12.17" maxSpeed="44.36" vClass="bus" carFollowModel="EIDM" accel="0.819" decel="4.010" emergencyDecel="6.859" tau="1.145">
-        <param key="myCustomParameter" value="6.314"/>
-    </vType>
-    <vehicle id="bus4" type="bus589" depart="3.60" departSpeed="max">
+    <vType id="bus589" length="12.69" minGap="3.00" maxSpeed="43.96" vClass="bus" carFollowModel="EIDM" accel="1.170" decel="4.150" emergencyDecel="6.889" tau="1.139"/>
+    <vehicle id="bus4" type="bus589" depart="3.60" departLane="best" departSpeed="max">
         <route edges="E1 E1.596 E2 -E32 -E21 -E19 E37 -E29 E41"/>
     </vehicle>
-    <vType id="bus43" length="11.97" maxSpeed="44.19" vClass="bus" carFollowModel="EIDM" accel="1.120" decel="3.919" emergencyDecel="6.879" tau="1.249">
-        <param key="myCustomParameter" value="6.559"/>
-    </vType>
-    <vehicle id="bus5" type="bus43" depart="4.50" departSpeed="max">
+    <vType id="bus43" length="12.54" minGap="3.00" maxSpeed="39.90" vClass="bus" carFollowModel="EIDM" accel="1.535" decel="3.773" emergencyDecel="6.887" tau="1.143"/>
+    <vehicle id="bus5" type="bus43" depart="4.50" departLane="best" departSpeed="max">
         <route edges="E9 E9.823 -E41 -E28 -E27 -E26 E33 -E8 -E7 E1 E1.596 E2"/>
     </vehicle>
-    <vType id="bus247" length="12.24" maxSpeed="43.73" vClass="bus" carFollowModel="EIDM" accel="1.048" decel="3.904" emergencyDecel="7.033" tau="1.291">
-        <param key="myCustomParameter" value="1.761"/>
-    </vType>
-    <vehicle id="bus7" type="bus247" depart="6.30" departSpeed="max">
+    <vType id="bus247" length="12.27" minGap="3.00" maxSpeed="43.52" vClass="bus" carFollowModel="EIDM" accel="1.565" decel="4.165" emergencyDecel="6.965" tau="1.221"/>
+    <vehicle id="bus7" type="bus247" depart="6.30" departLane="best" departSpeed="max">
         <route edges="E12 E3"/>
     </vehicle>
-    <vType id="bus545" length="10.48" maxSpeed="44.23" vClass="bus" carFollowModel="EIDM" accel="1.313" decel="3.854" emergencyDecel="7.459" tau="1.269">
-        <param key="myCustomParameter" value="2.114"/>
-    </vType>
-    <vehicle id="bus8" type="bus545" depart="7.20" departSpeed="max">
+    <vType id="bus545" length="13.39" minGap="3.00" maxSpeed="42.99" vClass="bus" carFollowModel="EIDM" accel="1.080" decel="4.260" emergencyDecel="6.668" tau="1.132"/>
+    <vehicle id="bus8" type="bus545" depart="7.20" departLane="best" departSpeed="max">
         <route edges="-E9.302 -E33 -E25 E19 E20"/>
     </vehicle>
-    <vType id="bus745" length="10.33" maxSpeed="43.30" vClass="bus" carFollowModel="EIDM" accel="1.343" decel="3.830" emergencyDecel="6.750" tau="1.237">
-        <param key="myCustomParameter" value="3.272"/>
-    </vType>
-    <vehicle id="bus9" type="bus745" depart="8.10" departSpeed="max">
+    <vType id="bus745" length="11.64" minGap="3.00" maxSpeed="39.05" vClass="bus" carFollowModel="EIDM" accel="1.517" decel="4.202" emergencyDecel="7.260" tau="0.982"/>
+    <vehicle id="bus9" type="bus745" depart="8.10" departLane="best" departSpeed="max">
         <route edges="E10 E11 E12 -E2 -E2.372 -E1 -E1.703 E6 E8 E40"/>
     </vehicle>
-    <vType id="bus6" length="11.26" maxSpeed="40.81" vClass="bus" carFollowModel="EIDM" accel="1.156" decel="3.832" emergencyDecel="6.865" tau="1.183">
-        <param key="myCustomParameter" value="1.010"/>
-    </vType>
-    <vehicle id="bus10" type="bus6" depart="9.00" departSpeed="max">
+    <vType id="bus6" length="12.98" minGap="3.00" maxSpeed="43.05" vClass="bus" carFollowModel="EIDM" accel="1.404" decel="3.930" emergencyDecel="6.723" tau="1.104"/>
+    <vehicle id="bus10" type="bus6" depart="9.00" departLane="best" departSpeed="max">
         <route edges="-E13 E6 E8 E9 E9.823 E10"/>
     </vehicle>
-    <vType id="bus673" length="12.74" maxSpeed="43.44" vClass="bus" carFollowModel="EIDM" accel="1.550" decel="3.755" emergencyDecel="6.987" tau="1.259">
-        <param key="myCustomParameter" value="2.178"/>
-    </vType>
-    <vehicle id="bus11" type="bus673" depart="9.90" departSpeed="max">
+    <vType id="bus673" length="12.11" minGap="3.00" maxSpeed="42.59" vClass="bus" carFollowModel="EIDM" accel="1.281" decel="4.310" emergencyDecel="6.746" tau="1.114"/>
+    <vehicle id="bus11" type="bus673" depart="9.90" departLane="best" departSpeed="max">
         <route edges="E32 E2.669 -E12 -E11 -E10 -E41 -E28 -E27 -E26"/>
     </vehicle>
-    <vType id="bus466" length="12.53" maxSpeed="42.27" vClass="bus" carFollowModel="EIDM" accel="1.302" decel="3.725" emergencyDecel="6.982" tau="1.274">
-        <param key="myCustomParameter" value="3.765"/>
-    </vType>
-    <vehicle id="bus12" type="bus466" depart="10.80" departSpeed="max">
+    <vType id="bus466" length="12.83" minGap="3.00" maxSpeed="40.76" vClass="bus" carFollowModel="EIDM" accel="1.207" decel="3.873" emergencyDecel="7.570" tau="1.319"/>
+    <vehicle id="bus12" type="bus466" depart="10.80" departLane="best" departSpeed="max">
         <route edges="-E28 -E27 -E26 -E25 E19 E20 E32 E2.669 E3"/>
     </vehicle>
-    <vType id="bus452" length="11.62" maxSpeed="41.70" vClass="bus" carFollowModel="EIDM" accel="1.283" decel="4.082" emergencyDecel="7.127" tau="1.162">
-        <param key="myCustomParameter" value="3.956"/>
-    </vType>
-    <vehicle id="bus13" type="bus452" depart="11.70" departSpeed="max">
+    <vType id="bus452" length="12.55" minGap="3.00" maxSpeed="41.86" vClass="bus" carFollowModel="EIDM" accel="1.371" decel="3.805" emergencyDecel="6.761" tau="1.403"/>
+    <vehicle id="bus13" type="bus452" depart="11.70" departLane="best" departSpeed="max">
         <route edges="-E38 -E10 -E41 -E28 -E35 -E34 E27 E28"/>
     </vehicle>
-    <vType id="bus566" length="12.67" maxSpeed="42.29" vClass="bus" carFollowModel="EIDM" accel="1.015" decel="3.738" emergencyDecel="6.981" tau="1.065">
-        <param key="myCustomParameter" value="2.732"/>
-    </vType>
-    <vehicle id="bus14" type="bus566" depart="12.60" departSpeed="max">
+    <vType id="bus566" length="13.37" minGap="3.00" maxSpeed="39.04" vClass="bus" carFollowModel="EIDM" accel="1.029" decel="3.891" emergencyDecel="6.837" tau="1.244"/>
+    <vehicle id="bus14" type="bus566" depart="12.60" departLane="best" departSpeed="max">
         <route edges="-E25 E37 -E29 E41 E10 E11 E12"/>
     </vehicle>
-    <vType id="bus264" length="12.71" maxSpeed="41.30" vClass="bus" carFollowModel="EIDM" accel="0.977" decel="4.150" emergencyDecel="6.841" tau="1.238">
-        <param key="myCustomParameter" value="6.595"/>
-    </vType>
-    <vehicle id="bus15" type="bus264" depart="13.50" departSpeed="max">
+    <vType id="bus264" length="11.68" minGap="3.00" maxSpeed="43.38" vClass="bus" carFollowModel="EIDM" accel="1.246" decel="3.989" emergencyDecel="6.476" tau="1.047"/>
+    <vehicle id="bus15" type="bus264" depart="13.50" departLane="best" departSpeed="max">
         <route edges="-E7 E1 E1.596 E2 E2.669 -E12 -E11 E39"/>
     </vehicle>
-    <vType id="bus60" length="12.84" maxSpeed="41.56" vClass="bus" carFollowModel="EIDM" accel="1.324" decel="3.826" emergencyDecel="6.947" tau="1.080">
-        <param key="myCustomParameter" value="7.466"/>
-    </vType>
-    <vehicle id="bus16" type="bus60" depart="14.40" departSpeed="max">
+    <vType id="bus60" length="12.71" minGap="3.00" maxSpeed="43.85" vClass="bus" carFollowModel="EIDM" accel="1.049" decel="4.147" emergencyDecel="7.065" tau="1.065"/>
+    <vehicle id="bus16" type="bus60" depart="14.40" departLane="best" departSpeed="max">
         <route edges="E6 E8 E9 E9.823 E10 E11 E12"/>
     </vehicle>
-    <vType id="bus875" length="12.19" maxSpeed="44.79" vClass="bus" carFollowModel="EIDM" accel="0.974" decel="3.954" emergencyDecel="6.930" tau="1.208">
-        <param key="myCustomParameter" value="5.411"/>
-    </vType>
-    <vehicle id="bus17" type="bus875" depart="15.30" departSpeed="max">
+    <vType id="bus875" length="12.90" minGap="3.00" maxSpeed="39.12" vClass="bus" carFollowModel="EIDM" accel="1.350" decel="4.264" emergencyDecel="6.764" tau="1.262"/>
+    <vehicle id="bus17" type="bus875" depart="15.30" departLane="best" departSpeed="max">
         <route edges="-E10 -E41 E29 -E37 E19 E20 E32 -E2.372 -E1 -E1.703 E6"/>
     </vehicle>
-    <vType id="bus321" length="10.32" maxSpeed="42.48" vClass="bus" carFollowModel="EIDM" accel="1.485" decel="3.805" emergencyDecel="6.833" tau="1.135">
-        <param key="myCustomParameter" value="4.642"/>
-    </vType>
-    <vehicle id="bus18" type="bus321" depart="16.20" departSpeed="max">
+    <vType id="bus321" length="11.36" minGap="3.00" maxSpeed="39.92" vClass="bus" carFollowModel="EIDM" accel="1.610" decel="3.984" emergencyDecel="7.214" tau="1.106"/>
+    <vehicle id="bus18" type="bus321" depart="16.20" departLane="best" departSpeed="max">
         <route edges="E6 E18 E25 E33 -E8 -E7 E1 E1.596"/>
     </vehicle>
-    <vType id="bus683" length="13.08" maxSpeed="42.81" vClass="bus" carFollowModel="EIDM" accel="0.935" decel="4.060" emergencyDecel="7.300" tau="1.240">
-        <param key="myCustomParameter" value="2.986"/>
-    </vType>
-    <vehicle id="bus19" type="bus683" depart="17.10" departSpeed="max">
+    <vType id="bus683" length="13.72" minGap="3.00" maxSpeed="42.54" vClass="bus" carFollowModel="EIDM" accel="1.214" decel="4.002" emergencyDecel="7.132" tau="1.318"/>
+    <vehicle id="bus19" type="bus683" depart="17.10" departLane="best" departSpeed="max">
         <route edges="-E41 -E28 -E27 -E26 E33 -E8 -E7 -E0 E4 E5"/>
     </vehicle>
-    <vType id="bus46" length="12.51" maxSpeed="44.24" vClass="bus" carFollowModel="EIDM" accel="1.219" decel="4.040" emergencyDecel="7.470" tau="1.016">
-        <param key="myCustomParameter" value="5.965"/>
-    </vType>
-    <vehicle id="bus20" type="bus46" depart="18.00" departSpeed="max">
+    <vType id="bus46" length="10.61" minGap="3.00" maxSpeed="44.15" vClass="bus" carFollowModel="EIDM" accel="1.072" decel="4.122" emergencyDecel="7.153" tau="1.176"/>
+    <vehicle id="bus20" type="bus46" depart="18.00" departLane="best" departSpeed="max">
         <route edges="-E211 -E19 E37 -E29 -E28 -E27 -E26"/>
     </vehicle>
-    <vType id="bus939" length="12.16" maxSpeed="43.49" vClass="bus" carFollowModel="EIDM" accel="1.118" decel="4.192" emergencyDecel="6.802" tau="1.144">
-        <param key="myCustomParameter" value="2.422"/>
-    </vType>
-    <vehicle id="bus24" type="bus939" depart="21.60" departSpeed="max">
+    <vType id="bus939" length="10.83" minGap="3.00" maxSpeed="41.98" vClass="bus" carFollowModel="EIDM" accel="1.386" decel="4.093" emergencyDecel="6.775" tau="1.039"/>
+    <vehicle id="bus24" type="bus939" depart="21.60" departLane="best" departSpeed="max">
         <route edges="-E7"/>
     </vehicle>
-    <vType id="bus887" length="11.89" maxSpeed="42.51" vClass="bus" carFollowModel="EIDM" accel="1.153" decel="4.173" emergencyDecel="6.941" tau="1.252">
-        <param key="myCustomParameter" value="4.005"/>
-    </vType>
-    <vehicle id="bus26" type="bus887" depart="23.40" departSpeed="max">
+    <vType id="bus887" length="12.88" minGap="3.00" maxSpeed="40.78" vClass="bus" carFollowModel="EIDM" accel="1.225" decel="3.769" emergencyDecel="6.931" tau="1.189"/>
+    <vehicle id="bus26" type="bus887" depart="23.40" departLane="best" departSpeed="max">
         <route edges="E6 E8 E9 E9.823 E10 E11 E12"/>
     </vehicle>
-    <vType id="bus396" length="12.53" maxSpeed="43.26" vClass="bus" carFollowModel="EIDM" accel="0.997" decel="3.882" emergencyDecel="6.828" tau="1.220">
-        <param key="myCustomParameter" value="4.877"/>
-    </vType>
-    <vehicle id="bus27" type="bus396" depart="24.30" departSpeed="max">
+    <vType id="bus396" length="11.25" minGap="3.00" maxSpeed="44.99" vClass="bus" carFollowModel="EIDM" accel="1.283" decel="4.261" emergencyDecel="7.237" tau="1.269"/>
+    <vehicle id="bus27" type="bus396" depart="24.30" departLane="best" departSpeed="max">
         <route edges="-E13 E6 E8 -E33 E26 E27 -E35"/>
     </vehicle>
-    <vType id="bus544" length="13.23" maxSpeed="41.88" vClass="bus" carFollowModel="EIDM" accel="1.217" decel="4.027" emergencyDecel="7.037" tau="1.198">
-        <param key="myCustomParameter" value="0.441"/>
-    </vType>
-    <vehicle id="bus28" type="bus544" depart="25.20" departSpeed="max">
+    <vType id="bus544" length="11.20" minGap="3.00" maxSpeed="39.92" vClass="bus" carFollowModel="EIDM" accel="1.075" decel="4.195" emergencyDecel="7.046" tau="1.370"/>
+    <vehicle id="bus28" type="bus544" depart="25.20" departLane="best" departSpeed="max">
         <route edges="-E1 -E1.703 E6 E15"/>
     </vehicle>
-    <vType id="bus236" length="12.69" maxSpeed="42.60" vClass="bus" carFollowModel="EIDM" accel="1.125" decel="4.178" emergencyDecel="6.714" tau="1.290">
-        <param key="myCustomParameter" value="2.103"/>
-    </vType>
-    <vehicle id="bus29" type="bus236" depart="26.10" departSpeed="max">
+    <vType id="bus236" length="10.92" minGap="3.00" maxSpeed="41.19" vClass="bus" carFollowModel="EIDM" accel="1.004" decel="4.015" emergencyDecel="6.957" tau="1.100"/>
+    <vehicle id="bus29" type="bus236" depart="26.10" departLane="best" departSpeed="max">
         <route edges="-E211 -E19 E25 E33 -E8"/>
     </vehicle>
-    <vType id="bus764" length="10.46" maxSpeed="43.41" vClass="bus" carFollowModel="EIDM" accel="1.259" decel="4.276" emergencyDecel="6.654" tau="0.936">
-        <param key="myCustomParameter" value="4.653"/>
-    </vType>
-    <vehicle id="bus32" type="bus764" depart="28.80" departSpeed="max">
+    <vType id="bus764" length="13.67" minGap="3.00" maxSpeed="43.76" vClass="bus" carFollowModel="EIDM" accel="1.522" decel="3.771" emergencyDecel="6.740" tau="1.321"/>
+    <vehicle id="bus32" type="bus764" depart="28.80" departLane="best" departSpeed="max">
         <route edges="-E5 -E4 E0 E6 E8 E9 E9.823 E10 E38"/>
     </vehicle>
-    <vType id="bus159" length="12.37" maxSpeed="39.15" vClass="bus" carFollowModel="EIDM" accel="1.302" decel="3.902" emergencyDecel="7.376" tau="1.468">
-        <param key="myCustomParameter" value="6.896"/>
-    </vType>
-    <vehicle id="bus33" type="bus159" depart="29.70" departSpeed="max">
+    <vType id="bus159" length="13.73" minGap="3.00" maxSpeed="43.29" vClass="bus" carFollowModel="EIDM" accel="1.161" decel="4.012" emergencyDecel="7.188" tau="1.167"/>
+    <vehicle id="bus33" type="bus159" depart="29.70" departLane="best" departSpeed="max">
         <route edges="-E15 E8 E9 E9.823 E10 E39"/>
     </vehicle>
-    <vType id="bus956" length="13.05" maxSpeed="41.65" vClass="bus" carFollowModel="EIDM" accel="1.554" decel="4.068" emergencyDecel="6.693" tau="1.151">
-        <param key="myCustomParameter" value="3.358"/>
-    </vType>
-    <vehicle id="bus34" type="bus956" depart="30.60" departSpeed="max">
+    <vType id="bus956" length="11.72" minGap="3.00" maxSpeed="41.85" vClass="bus" carFollowModel="EIDM" accel="0.996" decel="3.761" emergencyDecel="7" tau="1.262"/>
+    <vehicle id="bus34" type="bus956" depart="30.60" departLane="best" departSpeed="max">
         <route edges="E37 -E29 E41 E10 E38"/>
     </vehicle>
-    <vType id="bus29" length="12.64" maxSpeed="40.73" vClass="bus" carFollowModel="EIDM" accel="1.214" decel="3.859" emergencyDecel="7.106" tau="1.215">
-        <param key="myCustomParameter" value="5.653"/>
-    </vType>
-    <vehicle id="bus35" type="bus29" depart="31.50" departSpeed="max">
+    <vType id="bus29" length="11.92" minGap="3.00" maxSpeed="42.95" vClass="bus" carFollowModel="EIDM" accel="1.385" decel="3.985" emergencyDecel="6.821" tau="0.956"/>
+    <vehicle id="bus35" type="bus29" depart="31.50" departLane="best" departSpeed="max">
         <route edges="-E18 E15 E16"/>
     </vehicle>
-    <vType id="bus331" length="13.71" maxSpeed="43.63" vClass="bus" carFollowModel="EIDM" accel="0.937" decel="4.333" emergencyDecel="6.613" tau="1.136">
-        <param key="myCustomParameter" value="4.230"/>
-    </vType>
-    <vehicle id="bus37" type="bus331" depart="33.30" departSpeed="max">
+    <vType id="bus331" length="11.46" minGap="3.00" maxSpeed="41.84" vClass="bus" carFollowModel="EIDM" accel="1.476" decel="3.961" emergencyDecel="6.760" tau="1.184"/>
+    <vehicle id="bus37" type="bus331" depart="33.30" departLane="best" departSpeed="max">
         <route edges="-E39 -E10 -E41 -E28 -E27 -E26 E33 E9"/>
     </vehicle>
-    <vType id="bus129" length="10.94" maxSpeed="41.75" vClass="bus" carFollowModel="EIDM" accel="1.645" decel="4.355" emergencyDecel="7.421" tau="1.263">
-        <param key="myCustomParameter" value="4.078"/>
-    </vType>
-    <vehicle id="bus38" type="bus129" depart="34.20" departSpeed="max">
+    <vType id="bus129" length="10.81" minGap="3.00" maxSpeed="42.92" vClass="bus" carFollowModel="EIDM" accel="1.288" decel="4.100" emergencyDecel="7.011" tau="1.053"/>
+    <vehicle id="bus38" type="bus129" depart="34.20" departLane="best" departSpeed="max">
         <route edges="E2 E2.669 E3"/>
     </vehicle>
-    <vType id="bus125" length="12.85" maxSpeed="40.57" vClass="bus" carFollowModel="EIDM" accel="0.909" decel="3.733" emergencyDecel="7.182" tau="0.979">
-        <param key="myCustomParameter" value="3.509"/>
-    </vType>
-    <vehicle id="bus39" type="bus125" depart="35.10" departSpeed="max">
+    <vType id="bus125" length="12.84" minGap="3.00" maxSpeed="40.65" vClass="bus" carFollowModel="EIDM" accel="1.623" decel="4.277" emergencyDecel="6.991" tau="1.234"/>
+    <vehicle id="bus39" type="bus125" depart="35.10" departLane="best" departSpeed="max">
         <route edges="E1.596 E2 -E32 -E21 -E19 E25 E33 E40"/>
     </vehicle>
-    <vType id="bus411" length="12.61" maxSpeed="43.07" vClass="bus" carFollowModel="EIDM" accel="0.886" decel="4.304" emergencyDecel="7.228" tau="1.485">
-        <param key="myCustomParameter" value="4.440"/>
-    </vType>
-    <vehicle id="bus40" type="bus411" depart="36.00" departSpeed="max">
+    <vType id="bus411" length="13.79" minGap="3.00" maxSpeed="43.18" vClass="bus" carFollowModel="EIDM" accel="0.978" decel="3.948" emergencyDecel="6.720" tau="1.361"/>
+    <vehicle id="bus40" type="bus411" depart="36.00" departLane="best" departSpeed="max">
         <route edges="-E3 -E12 -E11 -E10 -E9 -E9.302 -E8 -E7 E1 E1.596"/>
     </vehicle>
-    <vType id="bus964" length="11.74" maxSpeed="42.32" vClass="bus" carFollowModel="EIDM" accel="1.487" decel="4.197" emergencyDecel="6.601" tau="1.236">
-        <param key="myCustomParameter" value="6.733"/>
-    </vType>
-    <vehicle id="bus41" type="bus964" depart="36.90" departSpeed="max">
+    <vType id="bus964" length="10.83" minGap="3.00" maxSpeed="41.85" vClass="bus" carFollowModel="EIDM" accel="1.227" decel="4.054" emergencyDecel="7.527" tau="1.165"/>
+    <vehicle id="bus41" type="bus964" depart="36.90" departLane="best" departSpeed="max">
         <route edges="-E4 E0 E1 E1.596 E2 E2.669 -E12"/>
     </vehicle>
-    <vehicle id="bus42" type="bus264" depart="37.80" departSpeed="max">
+    <vehicle id="bus42" type="bus264" depart="37.80" departLane="best" departSpeed="max">
         <route edges="-E41 E29 -E37 E19 E20 E32 E2.669 E3"/>
     </vehicle>
-    <vType id="bus223" length="13.03" maxSpeed="44.41" vClass="bus" carFollowModel="EIDM" accel="1.424" decel="4.275" emergencyDecel="7.040" tau="1.208">
-        <param key="myCustomParameter" value="7.928"/>
-    </vType>
-    <vehicle id="bus43" type="bus223" depart="38.70" departSpeed="max">
+    <vType id="bus223" length="13.66" minGap="3.00" maxSpeed="41.91" vClass="bus" carFollowModel="EIDM" accel="1.033" decel="3.974" emergencyDecel="7.101" tau="1.176"/>
+    <vehicle id="bus43" type="bus223" depart="38.70" departLane="best" departSpeed="max">
         <route edges="E0 E6 E8 -E33 -E25 -E18"/>
     </vehicle>
-    <vType id="bus167" length="12.71" maxSpeed="44.01" vClass="bus" carFollowModel="EIDM" accel="1.170" decel="3.923" emergencyDecel="6.993" tau="1.251">
-        <param key="myCustomParameter" value="4.559"/>
-    </vType>
-    <vehicle id="bus44" type="bus167" depart="39.60" departSpeed="max">
+    <vType id="bus167" length="12.27" minGap="3.00" maxSpeed="43.81" vClass="bus" carFollowModel="EIDM" accel="1.312" decel="3.909" emergencyDecel="6.990" tau="1.287"/>
+    <vehicle id="bus44" type="bus167" depart="39.60" departLane="best" departSpeed="max">
         <route edges="-E12 -E11 -E10 -E41 E29 -E37 E19 E20 E32 -E2.372"/>
     </vehicle>
-    <vType id="bus571" length="13.75" maxSpeed="42.05" vClass="bus" carFollowModel="EIDM" accel="1.150" decel="4.100" emergencyDecel="7.176" tau="1.280">
-        <param key="myCustomParameter" value="3.812"/>
-    </vType>
-    <vehicle id="bus45" type="bus571" depart="40.50" departSpeed="max">
+    <vType id="bus571" length="12.28" minGap="3.00" maxSpeed="43.00" vClass="bus" carFollowModel="EIDM" accel="1.272" decel="4.069" emergencyDecel="6.775" tau="1.087"/>
+    <vehicle id="bus45" type="bus571" depart="40.50" departLane="best" departSpeed="max">
         <route edges="E18 E19 E20 E32 E2.669 -E12"/>
     </vehicle>
-    <vType id="bus241" length="12.70" maxSpeed="39.41" vClass="bus" carFollowModel="EIDM" accel="1.736" decel="3.841" emergencyDecel="7.200" tau="1.363">
-        <param key="myCustomParameter" value="6.369"/>
-    </vType>
-    <vehicle id="bus46" type="bus241" depart="41.40" departSpeed="max">
+    <vType id="bus241" length="11.83" minGap="3.00" maxSpeed="42.70" vClass="bus" carFollowModel="EIDM" accel="1.330" decel="3.835" emergencyDecel="7.205" tau="1.197"/>
+    <vehicle id="bus46" type="bus241" depart="41.40" departLane="best" departSpeed="max">
         <route edges="-E13 E6 E8 -E33 -E25 -E18"/>
     </vehicle>
-    <vType id="bus811" length="11.77" maxSpeed="41.18" vClass="bus" carFollowModel="EIDM" accel="1.146" decel="4.002" emergencyDecel="6.752" tau="1.120">
-        <param key="myCustomParameter" value="6.500"/>
-    </vType>
-    <vehicle id="bus47" type="bus811" depart="42.30" departSpeed="max">
+    <vType id="bus811" length="12.37" minGap="3.00" maxSpeed="42.34" vClass="bus" carFollowModel="EIDM" accel="0.934" decel="4.034" emergencyDecel="6.886" tau="1.134"/>
+    <vehicle id="bus47" type="bus811" depart="42.30" departLane="best" departSpeed="max">
         <route edges="-E7 -E0"/>
     </vehicle>
-    <vType id="bus89" length="11.14" maxSpeed="42.23" vClass="bus" carFollowModel="EIDM" accel="1.140" decel="3.766" emergencyDecel="7.664" tau="1.272">
-        <param key="myCustomParameter" value="3.893"/>
-    </vType>
-    <vehicle id="bus48" type="bus89" depart="43.20" departSpeed="max">
+    <vType id="bus89" length="12.23" minGap="3.00" maxSpeed="41.04" vClass="bus" carFollowModel="EIDM" accel="1.003" decel="3.902" emergencyDecel="6.660" tau="1.367"/>
+    <vehicle id="bus48" type="bus89" depart="43.20" departLane="best" departSpeed="max">
         <route edges="E2 E2.669 E3"/>
     </vehicle>
-    <vType id="bus668" length="12.02" maxSpeed="41.64" vClass="bus" carFollowModel="EIDM" accel="0.990" decel="4.011" emergencyDecel="7.071" tau="1.490">
-        <param key="myCustomParameter" value="4.238"/>
-    </vType>
-    <vehicle id="bus49" type="bus668" depart="44.10" departSpeed="max">
+    <vType id="bus668" length="11.66" minGap="3.00" maxSpeed="44.12" vClass="bus" carFollowModel="EIDM" accel="1.055" decel="3.914" emergencyDecel="7.315" tau="1.279"/>
+    <vehicle id="bus49" type="bus668" depart="44.10" departLane="best" departSpeed="max">
         <route edges="E18 E37 -E29 E41 E10 E11"/>
     </vehicle>
-    <vType id="bus715" length="11.99" maxSpeed="43.12" vClass="bus" carFollowModel="EIDM" accel="1.334" decel="3.887" emergencyDecel="6.809" tau="1.389">
-        <param key="myCustomParameter" value="4.035"/>
-    </vType>
-    <vehicle id="bus50" type="bus715" depart="45.00" departSpeed="max">
+    <vType id="bus715" length="11.66" minGap="3.00" maxSpeed="40.86" vClass="bus" carFollowModel="EIDM" accel="1.171" decel="3.973" emergencyDecel="7.179" tau="1.006"/>
+    <vehicle id="bus50" type="bus715" depart="45.00" departLane="best" departSpeed="max">
         <route edges="-E26 E33 -E8 E15 E16 E17"/>
     </vehicle>
-    <vType id="bus691" length="12.53" maxSpeed="42.50" vClass="bus" carFollowModel="EIDM" accel="1.326" decel="3.808" emergencyDecel="7.314" tau="1.140">
-        <param key="myCustomParameter" value="3.317"/>
-    </vType>
-    <vehicle id="bus52" type="bus691" depart="46.80" departSpeed="max">
+    <vType id="bus691" length="12.72" minGap="3.00" maxSpeed="40.81" vClass="bus" carFollowModel="EIDM" accel="1.137" decel="3.777" emergencyDecel="6.423" tau="1.346"/>
+    <vehicle id="bus52" type="bus691" depart="46.80" departLane="best" departSpeed="max">
         <route edges="E15 E16 E17"/>
     </vehicle>
-    <vType id="bus959" length="13.18" maxSpeed="42.06" vClass="bus" carFollowModel="EIDM" accel="1.181" decel="4.171" emergencyDecel="7.068" tau="1.168">
-        <param key="myCustomParameter" value="3.169"/>
-    </vType>
-    <vehicle id="bus54" type="bus959" depart="48.60" departSpeed="max">
+    <vType id="bus959" length="11.50" minGap="3.00" maxSpeed="43.28" vClass="bus" carFollowModel="EIDM" accel="1.311" decel="4.195" emergencyDecel="7.233" tau="1.139"/>
+    <vehicle id="bus54" type="bus959" depart="48.60" departLane="best" departSpeed="max">
         <route edges="E1 E1.596 E2 -E32 -E21"/>
     </vehicle>
-    <vType id="bus492" length="11.51" maxSpeed="44.03" vClass="bus" carFollowModel="EIDM" accel="1.065" decel="3.738" emergencyDecel="6.997" tau="1.137">
-        <param key="myCustomParameter" value="6.769"/>
-    </vType>
-    <vehicle id="bus56" type="bus492" depart="50.40" departSpeed="max">
+    <vType id="bus492" length="11.86" minGap="3.00" maxSpeed="44.40" vClass="bus" carFollowModel="EIDM" accel="1.559" decel="4.199" emergencyDecel="6.812" tau="0.983"/>
+    <vehicle id="bus56" type="bus492" depart="50.40" departLane="best" departSpeed="max">
         <route edges="-E16 -E15 E8 -E33 E26 E27 E28 E41 -E9 -E9.302"/>
     </vehicle>
-    <vType id="bus580" length="11.98" maxSpeed="44.71" vClass="bus" carFollowModel="EIDM" accel="0.891" decel="4.265" emergencyDecel="7.016" tau="1.207">
-        <param key="myCustomParameter" value="7.657"/>
-    </vType>
-    <vehicle id="bus57" type="bus580" depart="51.30" departSpeed="max">
+    <vType id="bus580" length="11.97" minGap="3.00" maxSpeed="41.67" vClass="bus" carFollowModel="EIDM" accel="1.374" decel="4.206" emergencyDecel="7.371" tau="1.038"/>
+    <vehicle id="bus57" type="bus580" depart="51.30" departLane="best" departSpeed="max">
         <route edges="-E24 -E23 -E22 -E11 -E10 -E41 E29 -E37 E25"/>
     </vehicle>
-    <vType id="bus168" length="11.45" maxSpeed="41.30" vClass="bus" carFollowModel="EIDM" accel="0.833" decel="3.863" emergencyDecel="7.241" tau="1.120">
-        <param key="myCustomParameter" value="5.215"/>
-    </vType>
-    <vehicle id="bus58" type="bus168" depart="52.20" departSpeed="max">
+    <vType id="bus168" length="12.21" minGap="3.00" maxSpeed="40.30" vClass="bus" carFollowModel="EIDM" accel="1.327" decel="4.085" emergencyDecel="6.871" tau="1.099"/>
+    <vehicle id="bus58" type="bus168" depart="52.20" departLane="best" departSpeed="max">
         <route edges="-E38 -E10 -E41 E29 -E37 E19 E20 -E31"/>
     </vehicle>
-    <vType id="bus954" length="12.50" maxSpeed="43.09" vClass="bus" carFollowModel="EIDM" accel="1.447" decel="4.068" emergencyDecel="7.019" tau="1.231">
-        <param key="myCustomParameter" value="5.129"/>
-    </vType>
-    <vehicle id="bus59" type="bus954" depart="53.10" departSpeed="max">
+    <vType id="bus954" length="12.95" minGap="3.00" maxSpeed="40.77" vClass="bus" carFollowModel="EIDM" accel="0.822" decel="4.194" emergencyDecel="6.714" tau="1.081"/>
+    <vehicle id="bus59" type="bus954" depart="53.10" departLane="best" departSpeed="max">
         <route edges="E25 E26 E27 E28 E41 E10 E38"/>
     </vehicle>
-    <vType id="bus641" length="11.49" maxSpeed="42.45" vClass="bus" carFollowModel="EIDM" accel="1.019" decel="3.743" emergencyDecel="7.157" tau="1.163">
-        <param key="myCustomParameter" value="3.301"/>
-    </vType>
-    <vehicle id="bus61" type="bus641" depart="54.90" departSpeed="max">
+    <vType id="bus641" length="12.22" minGap="3.00" maxSpeed="41.93" vClass="bus" carFollowModel="EIDM" accel="1.128" decel="3.811" emergencyDecel="6.772" tau="1.184"/>
+    <vehicle id="bus61" type="bus641" depart="54.90" departLane="best" departSpeed="max">
         <route edges="-E12 -E11 -E10 -E41 E29 -E37 E19 E20 E32 -E2.372 -E1 -E1.703 E6"/>
     </vehicle>
-    <vType id="bus151" length="11.12" maxSpeed="40.81" vClass="bus" carFollowModel="EIDM" accel="1.150" decel="4.392" emergencyDecel="6.968" tau="1.165">
-        <param key="myCustomParameter" value="7.179"/>
-    </vType>
-    <vehicle id="bus62" type="bus151" depart="55.80" departSpeed="max">
+    <vType id="bus151" length="11.24" minGap="3.00" maxSpeed="43.16" vClass="bus" carFollowModel="EIDM" accel="1.072" decel="4.063" emergencyDecel="6.883" tau="1.194"/>
+    <vehicle id="bus62" type="bus151" depart="55.80" departLane="best" departSpeed="max">
         <route edges="-E11 -E10 -E41 E29 -E37 E19 E20 E32 -E2.372 -E1 -E1.703"/>
     </vehicle>
-    <vType id="bus278" length="12.78" maxSpeed="42.91" vClass="bus" carFollowModel="EIDM" accel="1.521" decel="4.170" emergencyDecel="6.948" tau="1.255">
-        <param key="myCustomParameter" value="4.454"/>
-    </vType>
-    <vehicle id="bus64" type="bus278" depart="57.60" departSpeed="max">
+    <vType id="bus278" length="13.04" minGap="3.00" maxSpeed="43.00" vClass="bus" carFollowModel="EIDM" accel="1.517" decel="3.956" emergencyDecel="7.151" tau="1.037"/>
+    <vehicle id="bus64" type="bus278" depart="57.60" departLane="best" departSpeed="max">
         <route edges="E310 -E21 -E19 -E18 E15 E16"/>
     </vehicle>
-    <vType id="bus546" length="11.33" maxSpeed="43.07" vClass="bus" carFollowModel="EIDM" accel="1.297" decel="3.815" emergencyDecel="7.023" tau="1.178">
-        <param key="myCustomParameter" value="5.308"/>
-    </vType>
-    <vehicle id="bus65" type="bus546" depart="58.50" departSpeed="max">
+    <vType id="bus546" length="11.91" minGap="3.00" maxSpeed="39.22" vClass="bus" carFollowModel="EIDM" accel="1.388" decel="3.812" emergencyDecel="6.888" tau="1.317"/>
+    <vehicle id="bus65" type="bus546" depart="58.50" departLane="best" departSpeed="max">
         <route edges="-E15 -E7 E1 E1.596"/>
     </vehicle>
-    <vType id="bus928" length="12.85" maxSpeed="39.41" vClass="bus" carFollowModel="EIDM" accel="1.152" decel="3.795" emergencyDecel="6.698" tau="1.146">
-        <param key="myCustomParameter" value="4.371"/>
-    </vType>
-    <vehicle id="bus66" type="bus928" depart="59.40" departSpeed="max">
+    <vType id="bus928" length="13.22" minGap="3.00" maxSpeed="42.15" vClass="bus" carFollowModel="EIDM" accel="1.055" decel="4.173" emergencyDecel="6.888" tau="1.292"/>
+    <vehicle id="bus66" type="bus928" depart="59.40" departLane="best" departSpeed="max">
         <route edges="E2 -E32 -E21 -E19 -E18 -E7 -E0"/>
     </vehicle>
-    <vType id="bus178" length="10.79" maxSpeed="40.78" vClass="bus" carFollowModel="EIDM" accel="1.349" decel="4.188" emergencyDecel="6.900" tau="1.030">
-        <param key="myCustomParameter" value="3.187"/>
-    </vType>
-    <vehicle id="bus68" type="bus178" depart="61.20" departSpeed="max">
+    <vType id="bus178" length="13.47" minGap="3.00" maxSpeed="41.00" vClass="bus" carFollowModel="EIDM" accel="1.202" decel="4.124" emergencyDecel="6.981" tau="1.250"/>
+    <vehicle id="bus68" type="bus178" depart="61.20" departLane="best" departSpeed="max">
         <route edges="-E40 -E33 -E25 E19 E20 E32 E2.669 -E12 -E11 -E10"/>
     </vehicle>
-    <vType id="bus992" length="10.99" maxSpeed="43.17" vClass="bus" carFollowModel="EIDM" accel="0.990" decel="4.327" emergencyDecel="7.229" tau="1.245">
-        <param key="myCustomParameter" value="6.204"/>
-    </vType>
-    <vehicle id="bus69" type="bus992" depart="62.10" departSpeed="max">
+    <vType id="bus992" length="11.27" minGap="3.00" maxSpeed="41.45" vClass="bus" carFollowModel="EIDM" accel="1.314" decel="4.262" emergencyDecel="6.911" tau="1.242"/>
+    <vehicle id="bus69" type="bus992" depart="62.10" departLane="best" departSpeed="max">
         <route edges="-E13 E6 E18"/>
     </vehicle>
-    <vType id="bus313" length="11.78" maxSpeed="41.90" vClass="bus" carFollowModel="EIDM" accel="0.952" decel="3.837" emergencyDecel="7.209" tau="1.229">
-        <param key="myCustomParameter" value="4.554"/>
-    </vType>
-    <vehicle id="bus70" type="bus313" depart="63.00" departSpeed="max">
+    <vType id="bus313" length="12.69" minGap="3.00" maxSpeed="41.23" vClass="bus" carFollowModel="EIDM" accel="1.262" decel="3.956" emergencyDecel="7.252" tau="1.265"/>
+    <vehicle id="bus70" type="bus313" depart="63.00" departLane="best" departSpeed="max">
         <route edges="-E24 -E23 -E22 -E11 -E10 -E9 -E9.302 -E8 E15 E16 E17"/>
     </vehicle>
-    <vType id="bus86" length="13.37" maxSpeed="39.62" vClass="bus" carFollowModel="EIDM" accel="1.066" decel="4.120" emergencyDecel="7.081" tau="1.132">
-        <param key="myCustomParameter" value="5.364"/>
-    </vType>
-    <vehicle id="bus72" type="bus86" depart="64.80" departSpeed="max">
+    <vType id="bus86" length="10.37" minGap="3.00" maxSpeed="39.35" vClass="bus" carFollowModel="EIDM" accel="1.238" decel="3.627" emergencyDecel="6.862" tau="1.124"/>
+    <vehicle id="bus72" type="bus86" depart="64.80" departLane="best" departSpeed="max">
         <route edges="-E1 -E1.703 E6 E8 E9 E9.823 E10 E38"/>
     </vehicle>
-    <vType id="bus567" length="10.19" maxSpeed="39.49" vClass="bus" carFollowModel="EIDM" accel="0.977" decel="4.052" emergencyDecel="7.086" tau="1.223">
-        <param key="myCustomParameter" value="6.974"/>
-    </vType>
-    <vehicle id="bus73" type="bus567" depart="65.70" departSpeed="max">
+    <vType id="bus567" length="11.49" minGap="3.00" maxSpeed="40.69" vClass="bus" carFollowModel="EIDM" accel="1.444" decel="3.761" emergencyDecel="6.922" tau="1.158"/>
+    <vehicle id="bus73" type="bus567" depart="65.70" departLane="best" departSpeed="max">
         <route edges="-E7 E1 E1.596 E2 E2.669 -E12 -E11 E39"/>
     </vehicle>
-    <vType id="bus207" length="12.05" maxSpeed="44.60" vClass="bus" carFollowModel="EIDM" accel="1.178" decel="4.059" emergencyDecel="6.842" tau="1.079">
-        <param key="myCustomParameter" value="2.241"/>
-    </vType>
-    <vehicle id="bus74" type="bus207" depart="66.60" departSpeed="max">
+    <vType id="bus207" length="13.66" minGap="3.00" maxSpeed="43.61" vClass="bus" carFollowModel="EIDM" accel="1.188" decel="4.185" emergencyDecel="7.281" tau="1.362"/>
+    <vehicle id="bus74" type="bus207" depart="66.60" departLane="best" departSpeed="max">
         <route edges="-E13 E6 E18"/>
     </vehicle>
-    <vType id="bus180" length="12.43" maxSpeed="43.48" vClass="bus" carFollowModel="EIDM" accel="0.902" decel="4.146" emergencyDecel="7.007" tau="1.241">
-        <param key="myCustomParameter" value="4.131"/>
-    </vType>
-    <vehicle id="bus75" type="bus180" depart="67.50" departSpeed="max">
+    <vType id="bus180" length="12.49" minGap="3.00" maxSpeed="43.02" vClass="bus" carFollowModel="EIDM" accel="1.736" decel="4.222" emergencyDecel="7.073" tau="1.098"/>
+    <vehicle id="bus75" type="bus180" depart="67.50" departLane="best" departSpeed="max">
         <route edges="-E13 E1 E1.596 E2 -E32 -E21 -E19"/>
     </vehicle>
-    <vehicle id="bus76" type="bus46" depart="68.40" departSpeed="max">
+    <vehicle id="bus76" type="bus46" depart="68.40" departLane="best" departSpeed="max">
         <route edges="-E10 -E41 E29 -E37 E19 E20 E32 E2.669"/>
     </vehicle>
-    <vType id="bus721" length="13.99" maxSpeed="44.84" vClass="bus" carFollowModel="EIDM" accel="1.075" decel="4.188" emergencyDecel="6.996" tau="1.312">
-        <param key="myCustomParameter" value="4.502"/>
-    </vType>
-    <vehicle id="bus78" type="bus721" depart="70.20" departSpeed="max">
+    <vType id="bus721" length="12.36" minGap="3.00" maxSpeed="41.55" vClass="bus" carFollowModel="EIDM" accel="1.344" decel="4.140" emergencyDecel="6.925" tau="1.201"/>
+    <vehicle id="bus78" type="bus721" depart="70.20" departLane="best" departSpeed="max">
         <route edges="-E9.302 -E8 -E7 -E0 E4"/>
     </vehicle>
-    <vType id="bus290" length="12.51" maxSpeed="42.30" vClass="bus" carFollowModel="EIDM" accel="1.337" decel="4.100" emergencyDecel="6.776" tau="1.371">
-        <param key="myCustomParameter" value="4.358"/>
-    </vType>
-    <vehicle id="bus80" type="bus290" depart="72.00" departSpeed="max">
+    <vType id="bus290" length="11.92" minGap="3.00" maxSpeed="42.19" vClass="bus" carFollowModel="EIDM" accel="1.392" decel="3.746" emergencyDecel="6.990" tau="1.265"/>
+    <vehicle id="bus80" type="bus290" depart="72.00" departLane="best" departSpeed="max">
         <route edges="E1.596 E2 -E32 -E21 -E19 E25 E33 -E8 E18"/>
     </vehicle>
-    <vType id="bus212" length="12.01" maxSpeed="40.84" vClass="bus" carFollowModel="EIDM" accel="1.316" decel="4.238" emergencyDecel="6.846" tau="1.250">
-        <param key="myCustomParameter" value="4.949"/>
-    </vType>
-    <vehicle id="bus81" type="bus212" depart="72.90" departSpeed="max">
+    <vType id="bus212" length="11.89" minGap="3.00" maxSpeed="39.56" vClass="bus" carFollowModel="EIDM" accel="1.174" decel="3.891" emergencyDecel="7.200" tau="1.225"/>
+    <vehicle id="bus81" type="bus212" depart="72.90" departLane="best" departSpeed="max">
         <route edges="-E40 -E8 -E7"/>
     </vehicle>
-    <vType id="bus678" length="12.94" maxSpeed="39.43" vClass="bus" carFollowModel="EIDM" accel="1.133" decel="3.943" emergencyDecel="7.066" tau="1.091">
-        <param key="myCustomParameter" value="6.027"/>
-    </vType>
-    <vehicle id="bus82" type="bus678" depart="73.80" departSpeed="max">
+    <vType id="bus678" length="11.59" minGap="3.00" maxSpeed="40.53" vClass="bus" carFollowModel="EIDM" accel="1.142" decel="3.920" emergencyDecel="6.811" tau="1.232"/>
+    <vehicle id="bus82" type="bus678" depart="73.80" departLane="best" departSpeed="max">
         <route edges="-E40 -E33 E26 E27 E28 E29 -E37"/>
     </vehicle>
-    <vType id="bus615" length="11.33" maxSpeed="40.28" vClass="bus" carFollowModel="EIDM" accel="1.257" decel="3.803" emergencyDecel="7.186" tau="1.295">
-        <param key="myCustomParameter" value="4.711"/>
-    </vType>
-    <vehicle id="bus84" type="bus615" depart="75.60" departSpeed="max">
+    <vType id="bus615" length="13.33" minGap="3.00" maxSpeed="43.44" vClass="bus" carFollowModel="EIDM" accel="1.176" decel="4.054" emergencyDecel="7.405" tau="1.125"/>
+    <vehicle id="bus84" type="bus615" depart="75.60" departLane="best" departSpeed="max">
         <route edges="E8 -E33 -E25 -E18 -E7"/>
     </vehicle>
-    <vType id="bus389" length="12.44" maxSpeed="43.87" vClass="bus" carFollowModel="EIDM" accel="1.487" decel="3.658" emergencyDecel="6.918" tau="1.290">
-        <param key="myCustomParameter" value="6.124"/>
-    </vType>
-    <vehicle id="bus85" type="bus389" depart="76.50" departSpeed="max">
+    <vType id="bus389" length="11.28" minGap="3.00" maxSpeed="43.97" vClass="bus" carFollowModel="EIDM" accel="1.247" decel="4.063" emergencyDecel="6.761" tau="1.297"/>
+    <vehicle id="bus85" type="bus389" depart="76.50" departLane="best" departSpeed="max">
         <route edges="-E2.372 -E1 -E1.703 E6 E8 -E33 E26 E27 -E35 -E34 -E26"/>
     </vehicle>
-    <vType id="bus825" length="13.75" maxSpeed="40.29" vClass="bus" carFollowModel="EIDM" accel="1.152" decel="4.279" emergencyDecel="6.680" tau="1.376">
-        <param key="myCustomParameter" value="5.293"/>
-    </vType>
-    <vehicle id="bus87" type="bus825" depart="78.30" departSpeed="max">
+    <vType id="bus825" length="13.77" minGap="3.00" maxSpeed="43.33" vClass="bus" carFollowModel="EIDM" accel="1.070" decel="3.931" emergencyDecel="7.007" tau="1.376"/>
+    <vehicle id="bus87" type="bus825" depart="78.30" departLane="best" departSpeed="max">
         <route edges="-E15 E8 E9 E9.823 E10"/>
     </vehicle>
-    <vType id="bus585" length="12.64" maxSpeed="43.22" vClass="bus" carFollowModel="EIDM" accel="1.183" decel="3.775" emergencyDecel="7.100" tau="1.215">
-        <param key="myCustomParameter" value="2.389"/>
-    </vType>
-    <vehicle id="bus88" type="bus585" depart="79.20" departSpeed="max">
+    <vType id="bus585" length="11.95" minGap="3.00" maxSpeed="41.85" vClass="bus" carFollowModel="EIDM" accel="1.325" decel="4.161" emergencyDecel="6.905" tau="1.244"/>
+    <vehicle id="bus88" type="bus585" depart="79.20" departLane="best" departSpeed="max">
         <route edges="E10 E11 E12 E3"/>
     </vehicle>
-    <vType id="bus417" length="10.87" maxSpeed="44.07" vClass="bus" carFollowModel="EIDM" accel="1.072" decel="3.924" emergencyDecel="7.158" tau="1.190">
-        <param key="myCustomParameter" value="3.906"/>
-    </vType>
-    <vehicle id="bus89" type="bus417" depart="80.10" departSpeed="max">
+    <vType id="bus417" length="11.61" minGap="3.00" maxSpeed="41.92" vClass="bus" carFollowModel="EIDM" accel="1.363" decel="3.730" emergencyDecel="7.259" tau="1.209"/>
+    <vehicle id="bus89" type="bus417" depart="80.10" departLane="best" departSpeed="max">
         <route edges="E1 E1.596 E2 -E32 -E21 -E19 E37"/>
     </vehicle>
-    <vType id="bus976" length="11.34" maxSpeed="41.90" vClass="bus" carFollowModel="EIDM" accel="1.508" decel="3.851" emergencyDecel="6.497" tau="1.137">
-        <param key="myCustomParameter" value="4.591"/>
-    </vType>
-    <vehicle id="bus91" type="bus976" depart="81.90" departSpeed="max">
+    <vType id="bus976" length="12.04" minGap="3.00" maxSpeed="42.73" vClass="bus" carFollowModel="EIDM" accel="0.966" decel="4.314" emergencyDecel="6.798" tau="1.364"/>
+    <vehicle id="bus91" type="bus976" depart="81.90" departLane="best" departSpeed="max">
         <route edges="-E10 -E41 E29 -E37 E19 E20 E32 -E2.372 -E1 -E1.703 E6"/>
     </vehicle>
-    <vType id="bus23" length="10.55" maxSpeed="42.80" vClass="bus" carFollowModel="EIDM" accel="1.296" decel="3.800" emergencyDecel="7.261" tau="1.214">
-        <param key="myCustomParameter" value="6.755"/>
-    </vType>
-    <vehicle id="bus92" type="bus23" depart="82.80" departSpeed="max">
+    <vType id="bus23" length="10.56" minGap="3.00" maxSpeed="42.40" vClass="bus" carFollowModel="EIDM" accel="1.295" decel="3.794" emergencyDecel="6.890" tau="1.165"/>
+    <vehicle id="bus92" type="bus23" depart="82.80" departLane="best" departSpeed="max">
         <route edges="-E13 E6 E8 E9 E9.823 E10 E11 E12"/>
     </vehicle>
-    <vType id="bus302" length="13.07" maxSpeed="43.37" vClass="bus" carFollowModel="EIDM" accel="1.075" decel="3.890" emergencyDecel="6.773" tau="1.005">
-        <param key="myCustomParameter" value="5.667"/>
-    </vType>
-    <vehicle id="bus93" type="bus302" depart="83.70" departSpeed="max">
+    <vType id="bus302" length="11.49" minGap="3.00" maxSpeed="40.52" vClass="bus" carFollowModel="EIDM" accel="1.342" decel="3.813" emergencyDecel="6.841" tau="1.077"/>
+    <vehicle id="bus93" type="bus302" depart="83.70" departLane="best" departSpeed="max">
         <route edges="E32 E2.669 -E12 -E11 E38"/>
     </vehicle>
-    <vType id="bus104" length="12.24" maxSpeed="43.57" vClass="bus" carFollowModel="EIDM" accel="1.252" decel="4.088" emergencyDecel="7.453" tau="1.123">
-        <param key="myCustomParameter" value="3.899"/>
-    </vType>
-    <vehicle id="bus94" type="bus104" depart="84.60" departSpeed="max">
+    <vType id="bus104" length="11.67" minGap="3.00" maxSpeed="42.47" vClass="bus" carFollowModel="EIDM" accel="1.426" decel="3.932" emergencyDecel="6.888" tau="1.167"/>
+    <vehicle id="bus94" type="bus104" depart="84.60" departLane="best" departSpeed="max">
         <route edges="E19 E20 E32 -E2.372 -E1 -E1.703"/>
     </vehicle>
-    <vehicle id="bus95" type="bus875" depart="85.50" departSpeed="max">
+    <vehicle id="bus95" type="bus875" depart="85.50" departLane="best" departSpeed="max">
         <route edges="-E1 -E1.703 E6 E8 E9 E9.823 E10 E11 E12"/>
     </vehicle>
-    <vType id="bus625" length="11.55" maxSpeed="41.22" vClass="bus" carFollowModel="EIDM" accel="1.549" decel="3.903" emergencyDecel="7.140" tau="1.051">
-        <param key="myCustomParameter" value="4.641"/>
-    </vType>
-    <vehicle id="bus96" type="bus625" depart="86.40" departSpeed="max">
+    <vType id="bus625" length="11.50" minGap="3.00" maxSpeed="43.53" vClass="bus" carFollowModel="EIDM" accel="1.296" decel="3.880" emergencyDecel="7.143" tau="1.272"/>
+    <vehicle id="bus96" type="bus625" depart="86.40" departLane="best" departSpeed="max">
         <route edges="-E211 -E19 E25 E26 E34"/>
     </vehicle>
-    <vType id="bus924" length="11.61" maxSpeed="41.62" vClass="bus" carFollowModel="EIDM" accel="1.189" decel="3.977" emergencyDecel="6.936" tau="1.314">
-        <param key="myCustomParameter" value="4.368"/>
-    </vType>
-    <vehicle id="bus97" type="bus924" depart="87.30" departSpeed="max">
+    <vType id="bus924" length="12.22" minGap="3.00" maxSpeed="44.26" vClass="bus" carFollowModel="EIDM" accel="1.051" decel="4.051" emergencyDecel="6.881" tau="1.249"/>
+    <vehicle id="bus97" type="bus924" depart="87.30" departLane="best" departSpeed="max">
         <route edges="E33 -E8 -E7 -E0 E4"/>
     </vehicle>
-    <vType id="bus425" length="11.53" maxSpeed="40.69" vClass="bus" carFollowModel="EIDM" accel="0.980" decel="4.034" emergencyDecel="6.883" tau="1.260">
-        <param key="myCustomParameter" value="7.454"/>
-    </vType>
-    <vehicle id="bus99" type="bus425" depart="89.10" departSpeed="max">
+    <vType id="bus425" length="11.31" minGap="3.00" maxSpeed="43.93" vClass="bus" carFollowModel="EIDM" accel="1.286" decel="4.109" emergencyDecel="7.008" tau="1.127"/>
+    <vehicle id="bus99" type="bus425" depart="89.10" departLane="best" departSpeed="max">
         <route edges="E18 E19 E20 E32 -E2.372"/>
     </vehicle>
 </routes>

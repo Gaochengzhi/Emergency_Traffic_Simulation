@@ -6,14 +6,13 @@ Features:
 
 - Completely random vehicle types and attributes, resulting in dynamic traffic flow
 - Real world image backgound (Dashikou, Zhenjiang, Jiangsu)
-- Vehicles will avoid emergency vehicle on sublane
+- Vehicles will avoid emergency vehicle on sublane and **lane**
 - Emergency vehicle is over speed and ignores red lights
 
 Problems:
 
 * The traffic lights are not intelligent, leading to congestion
 * Emergency vehicles cannot flexibly change lanes to overtake vehicles
-* Vehicles around the emergency vehicle cannot change lanes to avoid the emergency vehicle
 
 ![Screen Shot 2023-03-18 at 10.43.53](assets/Screen%20Shot%202023-03-18%20at%2010.43.53.jpg)
 
@@ -41,7 +40,7 @@ pip install traci  ## important! I didn't use the traditional
 git clone https://github.com/Gaochengzhi/Emergency_Traffic_Simulation.git --depth 1
 cd Emergency_Traffic_Simulation
 cd src
-python3 gui.py
+python3 gui_main.py  # wait for 30s and and an ambulance should appear
 ```
 
 ## Generating heatmap

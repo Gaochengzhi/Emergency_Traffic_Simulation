@@ -9,7 +9,5 @@ param; myCustomParameter; normal(5, 2); [0, 12]
 vClass; passenger
 carFollowModel; EIDM
 lcStrategic; 500
-lcKeepRight; 0
-lcOvertakeRight; 1
+minGap; 2
 lcSpeedGainRight; 1
-lcLookaheadLeft; 250

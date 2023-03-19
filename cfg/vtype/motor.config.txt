@@ -8,7 +8,6 @@ maxSpeed; normal(40,2); [35,45]
 vClass; motorcycle
 carFollowModel; EIDM
 lcStrategic; 500
-lcKeepRight; 0
+minGap; 1
 lcOvertakeRight; 1
 lcSpeedGainRight; 1
-lcLookaheadLeft; 250
