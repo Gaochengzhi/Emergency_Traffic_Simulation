@@ -11,10 +11,11 @@ Features:
 
 Problems:
 
-* The traffic lights are not intelligent, leading to congestion
-* Emergency vehicles cannot flexibly change lanes to overtake vehicles
+* The traffic lights are not intelligent, often leading to congestion
 
-![Screen Shot 2023-03-18 at 10.43.53](assets/Screen%20Shot%202023-03-18%20at%2010.43.53.jpg)
+![output](assets/output.gif)
+
+![traffic_light](assets/traffic_light.gif)
 
 
 
