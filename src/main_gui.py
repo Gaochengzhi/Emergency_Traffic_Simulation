@@ -62,7 +62,7 @@ def main(road_id):
 
                     traci.vehicle.setLaneChangeMode(vid,lcmode)
 
-                    if (res[4]-em_info[4]< detect_range) and (res[4]-em_info[4]>0) and res[5]==em_info[5]:
+                    if (res[4]-em_info[4]< detect_range) and (res[4]-em_info[4]>0) and res[5]==em_info[5] and res[3]>3:
                         lcsl = traci.vehicle.couldChangeLane(vid,1) ## 1 is left
                         lcsr = traci.vehicle.couldChangeLane(vid,-1) ## -1 is right
                         if lcsl:
@@ -72,7 +72,7 @@ def main(road_id):
                             # if lcsr:
                             traci.vehicle.changeLaneRelative(vid,-1,lctime)
                             print(f"vid:{vid},change right")
-                    elif (res[4]-em_info[4]< detect_range) and (res[4]-em_info[4]>0):
+                    elif (res[4]-em_info[4]< detect_range) and (res[4]-em_info[4]>0) and res[3]>3:
                         if (res[5]-em_info[5]>0): # change to left
                             traci.vehicle.changeLaneRelative(vid,1,lctime)
                             pass
