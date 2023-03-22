@@ -9,7 +9,7 @@ mv vTypeDistributions.add.xml vType.xml
 
 python3 $SUMO_HOME/tools/randomTrips.py \
 -n net.xml \
--p 0.02 \
+-p 0.03 \
 --fringe-factor 1 \
 -l \
 --min-distance 1000 \
@@ -40,12 +40,12 @@ python3 $SUMO_HOME/tools/randomTrips.py \
 
 python3 $SUMO_HOME/tools/randomTrips.py \
 -n net.xml \
--p 0.09 \
+-p 0.1 \
 --fringe-factor 1 \
 -l \
 --min-distance 1000 \
 --max-distance 500000 \
---end 19 \
+--end 109 \
 -r output.trips3.xml \
 --seed 30 \
 --validate \

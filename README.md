@@ -6,11 +6,10 @@ Features:
 
 - Completely random vehicle types and attributes, resulting in dynamic traffic flow
 - Real world image backgound (Dashikou, Zhenjiang, Jiangsu)
-- Vehicles will avoid emergency vehicle on sublane and **lane**
+- Vehicles will change lanes in order to avoid emergency vehicle
 - Emergency vehicle is over speed and ignores red lights
 
 Problems:
-
 * The traffic lights are not intelligent, often leading to congestion
 
 ![output](assets/output.gif)
@@ -35,13 +34,14 @@ pip install traci  ## important! I didn't use the traditional
 ## path import method because I was lazy 😅
 ```
 
+
 ## Have a quick run
 
 ```bash
 git clone https://github.com/Gaochengzhi/Emergency_Traffic_Simulation.git --depth 1
 cd Emergency_Traffic_Simulation
 cd src
-python3 gui_main.py  # wait for 30s and and an ambulance should appear
+gui=True python3 main.py  # wait for 30s and and an ambulance should appear
 ```
 
 ## Generating heatmap
@@ -52,7 +52,7 @@ python3 gui_main.py  # wait for 30s and and an ambulance should appear
 
 ```shell
 ## under src folder
-sh run.sh
+core={{!!input your core number!!}} sh run.sh
 ```
 
 after all processer finishes enter `tools` folder, run

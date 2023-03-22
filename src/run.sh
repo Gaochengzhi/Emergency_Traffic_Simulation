@@ -1,12 +1,14 @@
 #!/bin/bash
 
-# Get integer input from command line
-echo "Enter the number of the core on your computer:"
-read count
+# Get the number of times to run command A from the command line argument
+rm ../data/data.csv
+num_times=$core
 
-# Run command 'count' number of times
-for ((i=1;i<=$count;i++))
+# Loop through and execute command A num_times
+for (( i=1; i<=$num_times; i++ ))
 do
-  # Replace 'command A' with the actual command to be run
-  nohup python3 main.py &
+    echo "run for $i times"
+    nohup gui=False python3 main.py >/dev/null 2>&1 &
 done
+
+

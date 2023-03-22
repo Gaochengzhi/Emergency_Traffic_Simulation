@@ -5,14 +5,16 @@ import traci.constants as tc
 
 
 
+start_gui = os.environ["gui"]
 em_vid="eme"
-em_vehicle_start_time = 2000  # 100x, 1200 = 12s
-end_time = 15690
+em_vehicle_start_time = 3000  # 100x, 1200 = 12s
+end_time = 2000000
 detect_range = 80
 lctime = 3
 lcmode=0b011001000101
 
 road_id = "E6"
+
 
 def get_vid_info(vid,step):
     acc = traci.vehicle.getAccel(vid)
@@ -26,16 +28,21 @@ def main(road_id):
 
     f = open('../data/data.csv', 'a+')
     writer = csv.writer(f)
-
     step = 0 
 
-    traci.start(["sumo", "-c", "../cfg/emergency.city.sumo.cfg",\
+
+    sumo_exe = "sumo-gui"
+    if start_gui != "True":
+        sumo_exe = "sumo"
+    traci.start([sumo_exe, "-c", "../cfg/emergency.city.sumo.cfg",\
                     # "--lateral-resolution","0.5", \
                     "--lanechange.duration", "2" , \
                     "--random", \
+                    "--tls.actuated.jam-threshold","3", \
                     "--device.bluelight.explicit","true"])
 
-    # traci.gui.setSchema("View #0","real world")
+    if start_gui == "True":
+        traci.gui.setSchema("View #0","real world")
     while step < end_time:
         traci.simulationStep()
         if step == em_vehicle_start_time:
@@ -44,8 +51,10 @@ def main(road_id):
             traci.vehicle.setParameter(em_vid, "device.bluelight.reactiondist", str(90))
             traci.vehicle.setMaxSpeed(em_vid,33)
             traci.vehicle.setSpeedMode(em_vid,32)
-            # traci.gui.trackVehicle("View #0",em_vid)
-            # traci.gui.setZoom("View #0", 3000)
+
+            if start_gui == "True":
+                traci.gui.trackVehicle("View #0",em_vid)
+                traci.gui.setZoom("View #0", 3000)
 
         if step % 20 == 0 and step > em_vehicle_start_time+800:
             road_id = traci.vehicle.getRoadID(em_vid)
@@ -77,7 +86,7 @@ def main(road_id):
                         
 
             
-        if step % 10 == 0 and step > em_vehicle_start_time - 10000 and step< em_vehicle_start_time+800:
+        if step % 10 == 0 and step > em_vehicle_start_time - 1000:
             car_list = traci.edge.getLastStepVehicleIDs(road_id)
             if car_list:
                 for vid in car_list:
